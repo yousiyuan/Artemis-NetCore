@@ -1,0 +1,14 @@
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\bin\Debug\netcoreapp2.2\OSeage.QTI.Service.deps.json
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\bin\Debug\netcoreapp2.2\OSeage.QTI.Service.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\bin\Debug\netcoreapp2.2\OSeage.QTI.Service.pdb
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\bin\Debug\netcoreapp2.2\OSeage.QTI.Entity.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\bin\Debug\netcoreapp2.2\OSeage.QTI.Repository.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\bin\Debug\netcoreapp2.2\OSeage.QTI.Repository.pdb
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\bin\Debug\netcoreapp2.2\OSeage.QTI.Entity.pdb
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\obj\Debug\netcoreapp2.2\OSeage.QTI.Service.csprojAssemblyReference.cache
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\obj\Debug\netcoreapp2.2\OSeage.QTI.Service.csproj.CoreCompileInputs.cache
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\obj\Debug\netcoreapp2.2\OSeage.QTI.Service.AssemblyInfoInputs.cache
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\obj\Debug\netcoreapp2.2\OSeage.QTI.Service.AssemblyInfo.cs
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\obj\Debug\netcoreapp2.2\OSeage.QTI.Service.csproj.CopyComplete
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\obj\Debug\netcoreapp2.2\OSeage.QTI.Service.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.QTI.Service\obj\Debug\netcoreapp2.2\OSeage.QTI.Service.pdb

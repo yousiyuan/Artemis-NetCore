@@ -1,0 +1,202 @@
+﻿[2019/7/7 18:10:39] [Info] register AccountController.Login to [POST:/api/account/login]
+[2019/7/7 18:10:39] [Info] rewrite url [/api/public/sayhello/{name}-{value}] to [/api/public/sayhello]
+[2019/7/7 18:10:39] [Info] register PublicController.SayHello to [GET:/api/public/sayhello]
+[2019/7/7 18:10:39] [Info] register PublicController.GetJsonData to [GET:/api/public/getjsondata]
+[2019/7/7 18:10:39] [Info] register PublicController.Post to [POST:/api/public/post]
+[2019/7/7 18:10:39] [Info] register PublicController.PostFormReturnJson to [POST:/api/public/postformreturnjson]
+[2019/7/7 18:10:39] [Info] register PublicController.PostForm to [POST:/api/public/postform]
+[2019/7/7 18:10:39] [Info] register PublicController.UploadFile to [POST:/api/public/uploadfile]
+[2019/7/7 18:10:39] [Info] register PublicController.PostStream to [POST:/api/public/poststream]
+[2019/7/7 18:10:39] [Info] register DemoController.GetQuestionList to [POST:/com/demo/getquestionlist]
+[2019/7/7 18:10:39] [Warring] /api/account/login already exists!replaced with AccountController.Login!
+[2019/7/7 18:10:39] [Info] register AccountController.Login to [POST:/api/account/login]
+[2019/7/7 18:10:39] [Info] rewrite url [/api/public/sayhello/{name}-{value}] to [/api/public/sayhello]
+[2019/7/7 18:10:39] [Warring] /api/public/sayhello already exists!replaced with PublicController.SayHello!
+[2019/7/7 18:10:39] [Info] register PublicController.SayHello to [GET:/api/public/sayhello]
+[2019/7/7 18:10:39] [Warring] /api/public/getjsondata already exists!replaced with PublicController.GetJsonData!
+[2019/7/7 18:10:39] [Info] register PublicController.GetJsonData to [GET:/api/public/getjsondata]
+[2019/7/7 18:10:39] [Warring] /api/public/post already exists!replaced with PublicController.Post!
+[2019/7/7 18:10:39] [Info] register PublicController.Post to [POST:/api/public/post]
+[2019/7/7 18:10:39] [Warring] /api/public/postformreturnjson already exists!replaced with PublicController.PostFormReturnJson!
+[2019/7/7 18:10:39] [Info] register PublicController.PostFormReturnJson to [POST:/api/public/postformreturnjson]
+[2019/7/7 18:10:39] [Warring] /api/public/postform already exists!replaced with PublicController.PostForm!
+[2019/7/7 18:10:39] [Info] register PublicController.PostForm to [POST:/api/public/postform]
+[2019/7/7 18:10:39] [Warring] /api/public/uploadfile already exists!replaced with PublicController.UploadFile!
+[2019/7/7 18:10:39] [Info] register PublicController.UploadFile to [POST:/api/public/uploadfile]
+[2019/7/7 18:10:39] [Warring] /api/public/poststream already exists!replaced with PublicController.PostStream!
+[2019/7/7 18:10:39] [Info] register PublicController.PostStream to [POST:/api/public/poststream]
+[2019/7/7 18:10:39] [Warring] /com/demo/getquestionlist already exists!replaced with DemoController.GetQuestionList!
+[2019/7/7 18:10:39] [Info] register DemoController.GetQuestionList to [POST:/com/demo/getquestionlist]
+[2019/7/7 18:10:39] [Warring] /api/account/login already exists!replaced with AccountController.Login!
+[2019/7/7 18:10:39] [Info] register AccountController.Login to [POST:/api/account/login]
+[2019/7/7 18:10:39] [Info] rewrite url [/api/public/sayhello/{name}-{value}] to [/api/public/sayhello]
+[2019/7/7 18:10:40] [Warring] /api/public/sayhello already exists!replaced with PublicController.SayHello!
+[2019/7/7 18:10:40] [Info] register PublicController.SayHello to [GET:/api/public/sayhello]
+[2019/7/7 18:10:40] [Warring] /api/public/getjsondata already exists!replaced with PublicController.GetJsonData!
+[2019/7/7 18:10:40] [Info] register PublicController.GetJsonData to [GET:/api/public/getjsondata]
+[2019/7/7 18:10:40] [Warring] /api/public/post already exists!replaced with PublicController.Post!
+[2019/7/7 18:10:40] [Info] register PublicController.Post to [POST:/api/public/post]
+[2019/7/7 18:10:40] [Warring] /api/public/postformreturnjson already exists!replaced with PublicController.PostFormReturnJson!
+[2019/7/7 18:10:40] [Info] register PublicController.PostFormReturnJson to [POST:/api/public/postformreturnjson]
+[2019/7/7 18:10:40] [Warring] /api/public/postform already exists!replaced with PublicController.PostForm!
+[2019/7/7 18:10:40] [Info] register PublicController.PostForm to [POST:/api/public/postform]
+[2019/7/7 18:10:40] [Warring] /api/public/uploadfile already exists!replaced with PublicController.UploadFile!
+[2019/7/7 18:10:40] [Info] register PublicController.UploadFile to [POST:/api/public/uploadfile]
+[2019/7/7 18:10:40] [Warring] /api/public/poststream already exists!replaced with PublicController.PostStream!
+[2019/7/7 18:10:40] [Info] register PublicController.PostStream to [POST:/api/public/poststream]
+[2019/7/7 18:10:40] [Warring] /com/demo/getquestionlist already exists!replaced with DemoController.GetQuestionList!
+[2019/7/7 18:10:40] [Info] register DemoController.GetQuestionList to [POST:/com/demo/getquestionlist]
+[2019/7/7 18:10:40] [Info] init BeetleX.FastHttpApi.ServerController controller path C:\Users\artemis\.nuget\packages\beetlex.fasthttpapi\1.5.4.2\lib\netcoreapp2.1\
+[2019/7/7 18:10:40] [Info] register ServerController.__ServerStatus to [GET:/__serverstatus]
+[2019/7/7 18:10:40] [Info] register ServerController.__SetSettings to [POST:/__setsettings]
+[2019/7/7 18:10:40] [Info] register ServerController.__ChangeAccessKey to [GET:/__changeaccesskey]
+[2019/7/7 18:10:40] [Info] register ServerController.__GetSettings to [GET:/__getsettings]
+[2019/7/7 18:10:40] [Info] register ServerController.__LogConnect to [GET:/__logconnect]
+[2019/7/7 18:10:40] [Info] register ServerController.__ListLog to [GET:/__listlog]
+[2019/7/7 18:10:40] [Info] register ServerController.__GetOptions to [GET:/__getoptions]
+[2019/7/7 18:10:40] [Info] register ServerController.__UploadModule to [POST:/__uploadmodule]
+[2019/7/7 18:10:40] [Info] register ServerController.__SetActionMaxrps to [POST:/__setactionmaxrps]
+[2019/7/7 18:10:40] [Info] register ServerController.__SetOptions to [POST:/__setoptions]
+[2019/7/7 18:10:40] [Info] detection sessions timeout with 3600s
+[2019/7/7 18:10:40] [Info] listen 127.0.0.1@9090 success ssl:False
+[2019/7/7 18:10:40] [Info] BeetleX [V:1.3.2.0]
+[2019/7/7 18:10:40] [Info] Environment [ServerGC:True][IOQueue:False|n:2][Threads:4][Private Buffer:False|2048KB]
+[2019/7/7 18:10:40] [Info] BeetleX FastHttpApi [IOQueue:False|Threads:2] [V:1.5.4.2]
+[2019/7/7 18:10:40] [Debug] invoke options reload event!
+[2019/7/7 18:10:40] [Debug] invoke server started event!
+[2019/7/7 18:10:55] [Debug] 127.0.0.1:8332 update active time
+[2019/7/7 18:10:55] [Info] session connected from 127.0.0.1:8332@1
+[2019/7/7 18:10:55] [Debug] 127.0.0.1:8332 begin receive
+[2019/7/7 18:10:55] [Trace] 127.0.0.1:8332 receive hex:504f5354202f636f6d2f64656d6f2f4765745175657374696f6e4c69737420485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f782d7777772d666f726d2d75726c656e636f6465640d0a486f73743a206c6f63616c686f73740d0a746f6b656e3a207465737420746f6b656e20696e666f0d0a436f6e74656e742d4c656e6774683a20300d0a0d0a
+[2019/7/7 18:10:55] [Debug] 127.0.0.1:8332 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/7 18:10:55] [Debug] 127.0.0.1:8332 update active time
+[2019/7/7 18:10:55] [Info] 127.0.0.1:8332 POST /com/demo/GetQuestionList request
+[2019/7/7 18:10:55] [Debug] 127.0.0.1:8332 POST /com/demo/GetQuestionList request detail POST /com/demo/GetQuestionList
+Content-Type=application/x-www-form-urlencoded
+Host=localhost
+token=test token info
+Content-Length=0
+X-Real-IP=127.0.0.1:8332
+
+[2019/7/7 18:10:55] [Info] 127.0.0.1:8332 http POST /com/demo/getquestionlist use time:40ms
+[2019/7/7 18:10:55] [Debug] 127.0.0.1:8332 POST /com/demo/GetQuestionList response 200 OK
+
+[2019/7/7 18:10:55] [Info] 127.0.0.1:8332 POST /com/demo/GetQuestionList response 200 OK
+[2019/7/7 18:10:56] [Trace] 127.0.0.1:8332 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a446174653a2053756e2c203037204a756c20323031392031303a31303a353520474d540d0a436f6e74656e742d4c656e6774683a20333520202020202020200d0a0d0a5b22e6b581e5b9b4c2b7e585ace5ad90222c22e6b581e5b9b4c2b7e88e89e5a89c225d
+[2019/7/7 18:10:56] [Debug]  127.0.0.1:8332 connected
+[2019/7/7 18:10:57] [Trace] 127.0.0.1:8332 receive hex:504f5354202f6170692f6163636f756e742f4c6f67696e20485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a486f73743a206c6f63616c686f73740d0a436f6e74656e742d4c656e6774683a20353920202020202020200d0a0d0a7b22757365724e616d65223a227a7862222c2270617373776f7264223a22313233343536222c22766572696679436f6465223a227364683335227d
+[2019/7/7 18:10:57] [Debug] 127.0.0.1:8332 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/7 18:10:57] [Debug] 127.0.0.1:8332 update active time
+[2019/7/7 18:10:57] [Info] 127.0.0.1:8332 POST /api/account/Login request
+[2019/7/7 18:10:57] [Debug] 127.0.0.1:8332 POST /api/account/Login request detail POST /api/account/Login
+Content-Type=application/json
+Host=localhost
+Content-Length=59        
+X-Real-IP=127.0.0.1:8332
+
+[2019/7/7 18:10:57] [Debug] 127.0.0.1:8332 POST /api/account/Login set options
+[2019/7/7 18:10:57] [Info] 127.0.0.1:8332 http POST /api/account/login use time:72ms
+[2019/7/7 18:10:57] [Debug] 127.0.0.1:8332 POST /api/account/Login response 200 OK
+Access-Control-Allow-Origin=*
+
+[2019/7/7 18:10:57] [Info] 127.0.0.1:8332 POST /api/account/Login response 200 OK
+[2019/7/7 18:10:57] [Trace] 127.0.0.1:8332 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a4163636573732d436f6e74726f6c2d416c6c6f772d4f726967696e3a202a0d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a446174653a2053756e2c203037204a756c20323031392031303a31303a353720474d540d0a436f6e74656e742d4c656e6774683a20333320202020202020200d0a0d0a7b226d7367223a22e799bbe5bd95e68890e58a9f222c22636f6465223a3132337d
+[2019/7/7 18:10:57] [Trace] 127.0.0.1:8332 receive hex:474554202f6170692f7075626c69632f53617948656c6c6f3f6e616d653d2545362538382539312545362539382541462545352538352541432545352541442539302676616c75653d25453525413525423925453625393825414625453825384525383925453525413825394320485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f782d7777772d666f726d2d75726c656e636f6465640d0a486f73743a206c6f63616c686f73740d0a0d0a
+[2019/7/7 18:10:57] [Debug] 127.0.0.1:8332 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/7 18:10:57] [Debug] 127.0.0.1:8332 update active time
+[2019/7/7 18:10:57] [Info] 127.0.0.1:8332 GET /api/public/SayHello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C request
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 GET /api/public/SayHello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C request detail GET /api/public/SayHello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C
+Content-Type=application/x-www-form-urlencoded
+Host=localhost
+X-Real-IP=127.0.0.1:8332
+
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 GET /api/public/SayHello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C set options
+[2019/7/7 18:10:58] [Info] 127.0.0.1:8332 http GET /api/public/sayhello use time:153ms
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 GET /api/public/SayHello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C response 200 OK
+Access-Control-Allow-Origin=*
+
+[2019/7/7 18:10:58] [Info] 127.0.0.1:8332 GET /api/public/SayHello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C response 200 OK
+[2019/7/7 18:10:58] [Trace] 127.0.0.1:8332 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a4163636573732d436f6e74726f6c2d416c6c6f772d4f726967696e3a202a0d0a436f6e74656e742d547970653a20746578742f706c61696e0d0a446174653a2053756e2c203037204a756c20323031392031303a31303a353820474d540d0a436f6e74656e742d4c656e6774683a20383620202020202020200d0a0d0a7b2248656c6c6f223a2268656c6c6f20e68891e698afe585ace5ad903de5a5b9e698afe88e89e5a89c222c2254696d65223a22323031392d30372d30375431383a31303a35382e313137353132372b30383a3030227d
+[2019/7/7 18:10:58] [Trace] 127.0.0.1:8332 receive hex:474554202f6170692f7075626c69632f4765744a736f6e446174613f6e616d653d2545372538412542392545342542432542432545372542432539382676616c75653d25453725393425423726676167613d25453425424425413025453725394325384225453425424425413025453725394325384225453625394325383825453425424125414525453725394125383425453825383425423820485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f782d7777772d666f726d2d75726c656e636f6465640d0a486f73743a206c6f63616c686f73740d0a0d0a
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 update active time
+[2019/7/7 18:10:58] [Info] 127.0.0.1:8332 GET /api/public/GetJsonData?name=%E7%8A%B9%E4%BC%BC%E7%BC%98&value=%E7%94%B7&gaga=%E4%BD%A0%E7%9C%8B%E4%BD%A0%E7%9C%8B%E6%9C%88%E4%BA%AE%E7%9A%84%E8%84%B8 request
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 GET /api/public/GetJsonData?name=%E7%8A%B9%E4%BC%BC%E7%BC%98&value=%E7%94%B7&gaga=%E4%BD%A0%E7%9C%8B%E4%BD%A0%E7%9C%8B%E6%9C%88%E4%BA%AE%E7%9A%84%E8%84%B8 request detail GET /api/public/GetJsonData?name=%E7%8A%B9%E4%BC%BC%E7%BC%98&value=%E7%94%B7&gaga=%E4%BD%A0%E7%9C%8B%E4%BD%A0%E7%9C%8B%E6%9C%88%E4%BA%AE%E7%9A%84%E8%84%B8
+Content-Type=application/x-www-form-urlencoded
+Host=localhost
+X-Real-IP=127.0.0.1:8332
+
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 GET /api/public/GetJsonData?name=%E7%8A%B9%E4%BC%BC%E7%BC%98&value=%E7%94%B7&gaga=%E4%BD%A0%E7%9C%8B%E4%BD%A0%E7%9C%8B%E6%9C%88%E4%BA%AE%E7%9A%84%E8%84%B8 set options
+[2019/7/7 18:10:58] [Info] 127.0.0.1:8332 http GET /api/public/getjsondata use time:119ms
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 GET /api/public/GetJsonData?name=%E7%8A%B9%E4%BC%BC%E7%BC%98&value=%E7%94%B7&gaga=%E4%BD%A0%E7%9C%8B%E4%BD%A0%E7%9C%8B%E6%9C%88%E4%BA%AE%E7%9A%84%E8%84%B8 response 200 OK
+Access-Control-Allow-Origin=*
+
+[2019/7/7 18:10:58] [Info] 127.0.0.1:8332 GET /api/public/GetJsonData?name=%E7%8A%B9%E4%BC%BC%E7%BC%98&value=%E7%94%B7&gaga=%E4%BD%A0%E7%9C%8B%E4%BD%A0%E7%9C%8B%E6%9C%88%E4%BA%AE%E7%9A%84%E8%84%B8 response 200 OK
+[2019/7/7 18:10:58] [Trace] 127.0.0.1:8332 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a4163636573732d436f6e74726f6c2d416c6c6f772d4f726967696e3a202a0d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a446174653a2053756e2c203037204a756c20323031392031303a31303a353820474d540d0a436f6e74656e742d4c656e6774683a20313038202020202020200d0a0d0a7b2248656c6c6f223a2268656c6c6f20e78ab9e4bcbce7bc983de794b7222c2254696d65223a22323031392d30372d30375431383a31303a35382e363834323032392b30383a3030222c22696e666f223a22e4bda0e79c8be4bda0e79c8be69c88e4baaee79a84e884b8227d
+[2019/7/7 18:10:58] [Trace] 127.0.0.1:8332 receive hex:504f5354202f6170692f7075626c69632f506f737420485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a486f73743a206c6f63616c686f73740d0a436f6e74656e742d4c656e6774683a20333920202020202020200d0a0d0a7b226e616d65223a22e8abb8e8919be586b7e586b7222c2276616c7565223a223330e5b597227d
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 update active time
+[2019/7/7 18:10:58] [Info] 127.0.0.1:8332 POST /api/public/Post request
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 POST /api/public/Post request detail POST /api/public/Post
+Content-Type=application/json
+Host=localhost
+Content-Length=39        
+X-Real-IP=127.0.0.1:8332
+
+[2019/7/7 18:10:58] [Debug] 127.0.0.1:8332 POST /api/public/Post set options
+[2019/7/7 18:10:58] [Info] 127.0.0.1:8332 http POST /api/public/post use time:50ms
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 POST /api/public/Post response 200 OK
+Access-Control-Allow-Origin=*
+
+[2019/7/7 18:10:59] [Info] 127.0.0.1:8332 POST /api/public/Post response 200 OK
+[2019/7/7 18:10:59] [Trace] 127.0.0.1:8332 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a4163636573732d436f6e74726f6c2d416c6c6f772d4f726967696e3a202a0d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a446174653a2053756e2c203037204a756c20323031392031303a31303a353820474d540d0a436f6e74656e742d4c656e6774683a20323220202020202020200d0a0d0a22e8abb8e8919be586b7e586b7efbc9a3330e5b59722
+[2019/7/7 18:10:59] [Trace] 127.0.0.1:8332 receive hex:504f5354202f6170692f7075626c69632f506f7374466f726d52657475726e4a736f6e20485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f782d7777772d666f726d2d75726c656e636f6465640d0a486f73743a206c6f63616c686f73740d0a436f6e74656e742d4c656e6774683a20323620202020202020200d0a0d0a6e616d653d746573743131312676616c75653d74657374323232
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 update active time
+[2019/7/7 18:10:59] [Info] 127.0.0.1:8332 POST /api/public/PostFormReturnJson request
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 POST /api/public/PostFormReturnJson request detail POST /api/public/PostFormReturnJson
+Content-Type=application/x-www-form-urlencoded
+Host=localhost
+Content-Length=26        
+X-Real-IP=127.0.0.1:8332
+
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 POST /api/public/PostFormReturnJson set options
+[2019/7/7 18:10:59] [Info] 127.0.0.1:8332 http POST /api/public/postformreturnjson use time:73ms
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 POST /api/public/PostFormReturnJson response 200 OK
+Access-Control-Allow-Origin=*
+
+[2019/7/7 18:10:59] [Info] 127.0.0.1:8332 POST /api/public/PostFormReturnJson response 200 OK
+[2019/7/7 18:10:59] [Trace] 127.0.0.1:8332 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a4163636573732d436f6e74726f6c2d416c6c6f772d4f726967696e3a202a0d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a446174653a2053756e2c203037204a756c20323031392031303a31303a353920474d540d0a436f6e74656e742d4c656e6774683a20333620202020202020200d0a0d0a7b226e616d65223a2274657374313131222c2276616c7565223a2274657374323232227d
+[2019/7/7 18:10:59] [Trace] 127.0.0.1:8332 receive hex:504f5354202f6170692f7075626c69632f506f7374466f726d20485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f782d7777772d666f726d2d75726c656e636f6465640d0a486f73743a206c6f63616c686f73740d0a436f6e74656e742d4c656e6774683a20363620202020202020200d0a0d0a6e616d653d2545382541372538352545352542302542442545352542302539382545372542432539382676616c75653d254535253933254136254538253830254236
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 update active time
+[2019/7/7 18:10:59] [Info] 127.0.0.1:8332 POST /api/public/PostForm request
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 POST /api/public/PostForm request detail POST /api/public/PostForm
+Content-Type=application/x-www-form-urlencoded
+Host=localhost
+Content-Length=66        
+X-Real-IP=127.0.0.1:8332
+
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 POST /api/public/PostForm set options
+[2019/7/7 18:10:59] [Info] 127.0.0.1:8332 http POST /api/public/postform use time:56ms
+[2019/7/7 18:10:59] [Debug] 127.0.0.1:8332 POST /api/public/PostForm response 200 OK
+Access-Control-Allow-Origin=*
+
+[2019/7/7 18:10:59] [Info] 127.0.0.1:8332 POST /api/public/PostForm response 200 OK
+[2019/7/7 18:11:00] [Trace] 127.0.0.1:8332 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a4163636573732d436f6e74726f6c2d416c6c6f772d4f726967696e3a202a0d0a436f6e74656e742d547970653a20746578742f706c61696e0d0a446174653a2053756e2c203037204a756c20323031392031303a31303a353920474d540d0a436f6e74656e742d4c656e6774683a20313920202020202020200d0a0d0ae8a785e5b0bde5b098e7bc983de593a6e880b6
+[2019/7/7 18:11:35] [Debug] 127.0.0.1:8334 update active time
+[2019/7/7 18:11:35] [Info] session connected from 127.0.0.1:8334@2
+[2019/7/7 18:11:35] [Debug] 127.0.0.1:8334 begin receive
+[2019/7/7 18:11:35] [Debug]  127.0.0.1:8334 connected
+[2019/7/7 18:11:35] [Trace] 127.0.0.1:8334 receive hex:504f5354202f6170692f7075626c69632f75706c6f616466696c6520485454502f312e310d0a436f6e6e656374696f6e3a204b6565702d416c6976650d0a436f6e74656e742d547970653a206d756c7469706172742f666f726d2d646174613b20626f756e646172793d2d2d2d2d3864373033303637373362396265620d0a436f6e74656e742d4c656e6774683a203238340d0a486f73743a206c6f63616c686f73743a393039300d0a0d0a2d2d2d2d2d2d3864373033303637373362396265620d0a436f6e74656e742d446973706f736974696f6e3a20666f726d2d646174613b206e616d653d2272656d61726b220d0a0d0ae8bf99e698afe4b880e4b8aae9858de7bdaee69687e4bbb60d0a2d2d2d2d2d2d3864373033303637373362396265620d0a436f6e74656e742d446973706f736974696f6e3a20666f726d2d646174613b206e616d653d2266696c654e616d65223b2066696c656e616d653d227465737466696c6575706c6f61642e747874220d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6f637465742d73747265616d0d0a0d0a7465737466696c6575706c6f61640d0a2d2d2d2d2d2d3864373033303637373362396265622d2d0d0a
+[2019/7/7 18:11:35] [Debug] 127.0.0.1:8334 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/7 18:11:35] [Debug] 127.0.0.1:8334 update active time
+[2019/7/7 18:11:35] [Info] 127.0.0.1:8334 POST /api/public/uploadfile request
+[2019/7/7 18:11:35] [Debug] 127.0.0.1:8334 POST /api/public/uploadfile request detail POST /api/public/uploadfile
+Connection=Keep-Alive
+Content-Type=multipart/form-data; boundary=----8d70306773b9beb
+Content-Length=284
+Host=localhost:9090
+X-Real-IP=127.0.0.1:8334
+
+[2019/7/7 18:11:35] [Debug] 127.0.0.1:8334 POST /api/public/uploadfile set options

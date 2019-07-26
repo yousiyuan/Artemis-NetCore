@@ -1,0 +1,9 @@
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\API\OSeage.XTKJ.API.Message\bin\Debug\netcoreapp2.2\OSeage.XTKJ.API.Message.deps.json
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\API\OSeage.XTKJ.API.Message\bin\Debug\netcoreapp2.2\OSeage.XTKJ.API.Message.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\API\OSeage.XTKJ.API.Message\bin\Debug\netcoreapp2.2\OSeage.XTKJ.API.Message.pdb
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\API\OSeage.XTKJ.API.Message\obj\Debug\netcoreapp2.2\OSeage.XTKJ.API.Message.csproj.CoreCompileInputs.cache
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\API\OSeage.XTKJ.API.Message\obj\Debug\netcoreapp2.2\OSeage.XTKJ.API.Message.AssemblyInfoInputs.cache
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\API\OSeage.XTKJ.API.Message\obj\Debug\netcoreapp2.2\OSeage.XTKJ.API.Message.AssemblyInfo.cs
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\API\OSeage.XTKJ.API.Message\obj\Debug\netcoreapp2.2\OSeage.XTKJ.API.Message.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\API\OSeage.XTKJ.API.Message\obj\Debug\netcoreapp2.2\OSeage.XTKJ.API.Message.pdb
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\API\OSeage.XTKJ.API.Message\obj\Debug\netcoreapp2.2\OSeage.XTKJ.API.Message.csprojAssemblyReference.cache

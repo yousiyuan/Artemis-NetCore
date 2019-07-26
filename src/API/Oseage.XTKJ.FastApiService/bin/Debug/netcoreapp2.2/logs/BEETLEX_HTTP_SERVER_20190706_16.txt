@@ -1,0 +1,41 @@
+﻿[2019/7/6 17:10:38] [Info] rewrite url [/api/program/hello/{name}] to [/api/program/hello]
+[2019/7/6 17:10:38] [Info] register Program.Hello to [GET:/api/program/hello]
+[2019/7/6 17:10:38] [Info] init BeetleX.FastHttpApi.ServerController controller path C:\Users\artemis\.nuget\packages\beetlex.fasthttpapi\1.5.4.2\lib\netcoreapp2.1\
+[2019/7/6 17:10:38] [Info] register ServerController.__ServerStatus to [GET:/__serverstatus]
+[2019/7/6 17:10:38] [Info] register ServerController.__SetSettings to [POST:/__setsettings]
+[2019/7/6 17:10:38] [Info] register ServerController.__ChangeAccessKey to [GET:/__changeaccesskey]
+[2019/7/6 17:10:38] [Info] register ServerController.__GetSettings to [GET:/__getsettings]
+[2019/7/6 17:10:38] [Info] register ServerController.__LogConnect to [GET:/__logconnect]
+[2019/7/6 17:10:38] [Info] register ServerController.__ListLog to [GET:/__listlog]
+[2019/7/6 17:10:38] [Info] register ServerController.__GetOptions to [GET:/__getoptions]
+[2019/7/6 17:10:38] [Info] register ServerController.__UploadModule to [POST:/__uploadmodule]
+[2019/7/6 17:10:38] [Info] register ServerController.__SetActionMaxrps to [POST:/__setactionmaxrps]
+[2019/7/6 17:10:38] [Info] register ServerController.__SetOptions to [POST:/__setoptions]
+[2019/7/6 17:10:38] [Info] detection sessions timeout with 3600s
+[2019/7/6 17:10:39] [Info] listen 127.0.0.1@9090 success ssl:False
+[2019/7/6 17:10:39] [Warring] no serverGC mode,please enable serverGC mode!
+[2019/7/6 17:10:39] [Info] BeetleX [V:1.3.2.0]
+[2019/7/6 17:10:39] [Info] Environment [ServerGC:False][IOQueue:False|n:2][Threads:4][Private Buffer:False|2048KB]
+[2019/7/6 17:10:39] [Info] BeetleX FastHttpApi [IOQueue:False|Threads:2] [V:1.5.4.2]
+[2019/7/6 17:10:39] [Debug] invoke options reload event!
+[2019/7/6 17:10:39] [Debug] invoke server started event!
+[2019/7/6 17:10:57] [Debug] 127.0.0.1:6683 update active time
+[2019/7/6 17:10:57] [Info] session connected from 127.0.0.1:6683@1
+[2019/7/6 17:10:57] [Debug] 127.0.0.1:6683 begin receive
+[2019/7/6 17:10:57] [Trace] 127.0.0.1:6683 receive hex:474554202f6170692f70726f6772616d2f68656c6c6f3f6e616d653d25453625383825393125453625393825414625453525383525414325453525414425393020485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f782d7777772d666f726d2d75726c656e636f6465640d0a486f73743a206c6f63616c686f73740d0a0d0a
+[2019/7/6 17:10:57] [Debug] 127.0.0.1:6683 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/6 17:10:57] [Debug] 127.0.0.1:6683 update active time
+[2019/7/6 17:10:57] [Info] 127.0.0.1:6683 GET /api/program/hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90 request
+[2019/7/6 17:10:57] [Debug] 127.0.0.1:6683 GET /api/program/hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90 request detail GET /api/program/hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90
+Content-Type=application/x-www-form-urlencoded
+Host=localhost
+X-Real-IP=127.0.0.1:6683
+
+[2019/7/6 17:11:41] [Info] 127.0.0.1:6683 http GET /api/program/hello use time:44578ms
+[2019/7/6 17:11:42] [Debug] 127.0.0.1:6683 GET /api/program/hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90 response 200 OK
+
+[2019/7/6 17:11:42] [Info] 127.0.0.1:6683 GET /api/program/hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90 response 200 OK
+[2019/7/6 17:11:42] [Trace] 127.0.0.1:6683 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a446174653a205361742c203036204a756c20323031392030393a31313a343120474d540d0a436f6e74656e742d4c656e6774683a20313236202020202020200d0a0d0a7b2255726c223a222f6170692f70726f6772616d2f68656c6c6f222c224572726f72223a6e756c6c2c22436f6465223a3230302c22537461636b5472616365223a6e756c6c2c2244617461223a2268656c6c6f20e68891e698afe585ace5ad9020323031392f372f362031373a31313a3431222c224944223a6e756c6c7d
+[2019/7/6 17:11:42] [Debug]  127.0.0.1:6683 connected
+[2019/7/6 17:11:42] [Debug] 127.0.0.1:6683 receive close error ConnectionReset receive:0
+[2019/7/6 17:11:42] [Info] session 127.0.0.1:6683@1 disconnected

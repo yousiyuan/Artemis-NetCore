@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//*******************************
+// Create By 流年 公子
+// Date 2019-07-03 13:49
+// Code Generate By SmartCode
+// Code Generate Github : https://github.com/Ahoo-Wang/SmartCode
+//*******************************-->
+
+<SmartSqlMap Scope="Question" xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+
+    <ResultMaps>
+        <ResultMap Id="QuestionResultMap">
+                <Result Column="row_key" Property="RowKey" />
+                <Result Column="title" Property="Title" />
+                <Result Column="question_stem" Property="QuestionStem" />
+                <Result Column="course_key" Property="CourseKey" />
+                <Result Column="course_name" Property="CourseName" />
+                <Result Column="question_bank_key" Property="QuestionBankKey" />
+                <Result Column="question_category_key" Property="QuestionCategoryKey" />
+                <Result Column="question_type_key" Property="QuestionTypeKey" />
+                <Result Column="has_sort_random" Property="HasSortRandom" />
+                <Result Column="content_key" Property="ContentKey" />
+                <Result Column="difficulty_level" Property="DifficultyLevel" />
+                <Result Column="status" Property="Status" />
+                <Result Column="create_by" Property="CreateBy" />
+                <Result Column="create_name" Property="CreateName" />
+                <Result Column="create_time" Property="CreateTime" />
+                <Result Column="owner_id" Property="OwnerId" />
+                <Result Column="owner_name" Property="OwnerName" />
+                <Result Column="update_time" Property="UpdateTime" />
+                <Result Column="remark" Property="Remark" />
+        </ResultMap>
+    </ResultMaps>
+    <Statements>
+        <Statement Id="QueryParams">
+            <Where>
+                    <IsNotEmpty Prepend="And" Property="RowKey">
+                        T.row_key = @RowKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Title">
+                        T.title = @Title
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="QuestionStem">
+                        T.question_stem = @QuestionStem
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CourseKey">
+                        T.course_key = @CourseKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CourseName">
+                        T.course_name = @CourseName
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="QuestionBankKey">
+                        T.question_bank_key = @QuestionBankKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="QuestionCategoryKey">
+                        T.question_category_key = @QuestionCategoryKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="QuestionTypeKey">
+                        T.question_type_key = @QuestionTypeKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="HasSortRandom">
+                        T.has_sort_random = @HasSortRandom
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="ContentKey">
+                        T.content_key = @ContentKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="DifficultyLevel">
+                        T.difficulty_level = @DifficultyLevel
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Status">
+                        T.status = @Status
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CreateBy">
+                        T.create_by = @CreateBy
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CreateName">
+                        T.create_name = @CreateName
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CreateTime">
+                        T.create_time = @CreateTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="OwnerId">
+                        T.owner_id = @OwnerId
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="OwnerName">
+                        T.owner_name = @OwnerName
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="UpdateTime">
+                        T.update_time = @UpdateTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Remark">
+                        T.remark = @Remark
+                    </IsNotEmpty>
+            </Where>
+        </Statement>
+
+
+<!--新增-->
+<Statement Id="Insert">
+    INSERT INTO tbl_question
+    (
+      row_key,
+      title,
+      question_stem,
+      course_key,
+      course_name,
+      question_bank_key,
+      question_category_key,
+      question_type_key,
+      has_sort_random,
+      content_key,
+      difficulty_level,
+      status,
+      create_by,
+      create_name,
+      create_time,
+      owner_id,
+      owner_name,
+      update_time,
+      remark
+    )
+    VALUES
+    (
+      @RowKey,
+      @Title,
+      @QuestionStem,
+      @CourseKey,
+      @CourseName,
+      @QuestionBankKey,
+      @QuestionCategoryKey,
+      @QuestionTypeKey,
+      @HasSortRandom,
+      @ContentKey,
+      @DifficultyLevel,
+      @Status,
+      @CreateBy,
+      @CreateName,
+      @CreateTime,
+      @OwnerId,
+      @OwnerName,
+      @UpdateTime,
+      @Remark
+    )
+</Statement>
+
+<!--删除-->
+<Statement Id="Delete">
+    Delete From tbl_question
+    Where row_key=@RowKey
+</Statement>
+
+<!--更新-->
+<Statement Id="Update">
+    UPDATE tbl_question
+    <Set>
+                <IsProperty Prepend="," Property="Title">
+                    title = @Title
+                </IsProperty>
+                <IsProperty Prepend="," Property="QuestionStem">
+                    question_stem = @QuestionStem
+                </IsProperty>
+                <IsProperty Prepend="," Property="CourseKey">
+                    course_key = @CourseKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="CourseName">
+                    course_name = @CourseName
+                </IsProperty>
+                <IsProperty Prepend="," Property="QuestionBankKey">
+                    question_bank_key = @QuestionBankKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="HasSortRandom">
+                    has_sort_random = @HasSortRandom
+                </IsProperty>
+                <IsProperty Prepend="," Property="DifficultyLevel">
+                    difficulty_level = @DifficultyLevel
+                </IsProperty>
+                <IsProperty Prepend="," Property="Status">
+                    status = @Status
+                </IsProperty>
+                <IsProperty Prepend="," Property="CreateBy">
+                    create_by = @CreateBy
+                </IsProperty>
+                <IsProperty Prepend="," Property="CreateName">
+                    create_name = @CreateName
+                </IsProperty>
+                <IsProperty Prepend="," Property="CreateTime">
+                    create_time = @CreateTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="OwnerId">
+                    owner_id = @OwnerId
+                </IsProperty>
+                <IsProperty Prepend="," Property="OwnerName">
+                    owner_name = @OwnerName
+                </IsProperty>
+                <IsProperty Prepend="," Property="UpdateTime">
+                    update_time = @UpdateTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="Remark">
+                    remark = @Remark
+                </IsProperty>
+    </Set>
+    Where row_key=@RowKey
+</Statement>
+
+    <!--获取数据列-->
+    <Statement Id="Query" ResultMap="QuestionResultMap">
+        SELECT
+        <IsNotEmpty Prepend="Top" Property="Taken">
+            (@Taken)
+        </IsNotEmpty>
+        T.* From tbl_question T
+        <Include RefId="QueryParams"/>
+        <Switch Prepend="Order By" Property="OrderBy">
+            <Default>
+                T.row_key Desc
+            </Default>
+        </Switch>
+    </Statement>
+
+
+    <!--获取分页数据-->
+    <Statement Id="QueryByPage" ResultMap="QuestionResultMap">
+
+                Select TT.* From
+                (Select ROW_NUMBER() Over(Order By T.row_key Desc) Row_Index,T.* From tbl_question T With(NoLock)
+                <Include RefId="QueryParams"/>) TT
+                Where TT.Row_Index Between ((@PageIndex-1)*@PageSize+1) And (@PageIndex*@PageSize);
+                </Statement>
+
+
+<!--获取记录数-->
+<Statement Id="GetRecord">
+    Select Count(1) From tbl_question T
+    <Include RefId="QueryParams" />
+</Statement>
+
+    <!--获取表映射实体-->
+    <Statement Id="GetEntity" ResultMap="QuestionResultMap">
+        Select Top 1 T.* From tbl_question T With(NoLock)
+        <Where Min="1">
+                <IsNotEmpty Prepend="And" Property="RowKey">
+                    T.row_key= @RowKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Title">
+                    T.title= @Title
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="QuestionStem">
+                    T.question_stem= @QuestionStem
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CourseKey">
+                    T.course_key= @CourseKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CourseName">
+                    T.course_name= @CourseName
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="QuestionBankKey">
+                    T.question_bank_key= @QuestionBankKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="QuestionCategoryKey">
+                    T.question_category_key= @QuestionCategoryKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="QuestionTypeKey">
+                    T.question_type_key= @QuestionTypeKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="HasSortRandom">
+                    T.has_sort_random= @HasSortRandom
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="ContentKey">
+                    T.content_key= @ContentKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="DifficultyLevel">
+                    T.difficulty_level= @DifficultyLevel
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Status">
+                    T.status= @Status
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CreateBy">
+                    T.create_by= @CreateBy
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CreateName">
+                    T.create_name= @CreateName
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CreateTime">
+                    T.create_time= @CreateTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="OwnerId">
+                    T.owner_id= @OwnerId
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="OwnerName">
+                    T.owner_name= @OwnerName
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="UpdateTime">
+                    T.update_time= @UpdateTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Remark">
+                    T.remark= @Remark
+                </IsNotEmpty>
+        </Where>
+    </Statement>
+
+
+<!--是否存在该记录-->
+<Statement Id="IsExist">
+    Select Count(1) From tbl_question T
+    <Include RefId="QueryParams" />
+</Statement>
+
+
+    </Statements>
+</SmartSqlMap>

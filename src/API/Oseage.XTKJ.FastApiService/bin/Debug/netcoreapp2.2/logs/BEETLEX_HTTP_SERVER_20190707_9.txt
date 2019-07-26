@@ -1,0 +1,19 @@
+﻿[2019/7/7 1:17:33] [Info] init BeetleX.FastHttpApi.ServerController controller path C:\Users\artemis\.nuget\packages\beetlex.fasthttpapi\1.5.4.2\lib\netcoreapp2.1\
+[2019/7/7 1:17:33] [Info] register ServerController.__ServerStatus to [GET:/__serverstatus]
+[2019/7/7 1:17:33] [Info] register ServerController.__SetSettings to [POST:/__setsettings]
+[2019/7/7 1:17:33] [Info] register ServerController.__ChangeAccessKey to [GET:/__changeaccesskey]
+[2019/7/7 1:17:33] [Info] register ServerController.__GetSettings to [GET:/__getsettings]
+[2019/7/7 1:17:33] [Info] register ServerController.__LogConnect to [GET:/__logconnect]
+[2019/7/7 1:17:33] [Info] register ServerController.__ListLog to [GET:/__listlog]
+[2019/7/7 1:17:33] [Info] register ServerController.__GetOptions to [GET:/__getoptions]
+[2019/7/7 1:17:33] [Info] register ServerController.__UploadModule to [POST:/__uploadmodule]
+[2019/7/7 1:17:33] [Info] register ServerController.__SetActionMaxrps to [POST:/__setactionmaxrps]
+[2019/7/7 1:17:33] [Info] register ServerController.__SetOptions to [POST:/__setoptions]
+[2019/7/7 1:17:33] [Info] detection sessions timeout with 3600s
+[2019/7/7 1:17:33] [Info] listen 127.0.0.1@9090 success ssl:False
+[2019/7/7 1:17:33] [Warring] no serverGC mode,please enable serverGC mode!
+[2019/7/7 1:17:33] [Info] BeetleX [V:1.3.2.0]
+[2019/7/7 1:17:33] [Info] Environment [ServerGC:False][IOQueue:False|n:2][Threads:4][Private Buffer:False|2048KB]
+[2019/7/7 1:17:33] [Info] BeetleX FastHttpApi [IOQueue:False|Threads:2] [V:1.5.4.2]
+[2019/7/7 1:17:33] [Debug] invoke options reload event!
+[2019/7/7 1:17:33] [Debug] invoke server started event!

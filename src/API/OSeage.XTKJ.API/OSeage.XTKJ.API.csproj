@@ -1,0 +1,203 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspectCore.Extensions.DependencyInjection" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="SmartSql.DIExtension" Version="4.0.71" />
+    <PackageReference Include="SmartSql.InvokeSync" Version="4.0.71" />
+    <PackageReference Include="SmartSql.ScriptTag" Version="4.0.71" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Entity\OSeage.LMS.COM.Entity\OSeage.LMS.COM.Entity.csproj" />
+    <ProjectReference Include="..\..\Entity\OSeage.LMS.ERSCP.Entity\OSeage.LMS.ERSCP.Entity.csproj" />
+    <ProjectReference Include="..\..\Entity\OSeage.QTI.Entity\OSeage.QTI.Entity.csproj" />
+    <ProjectReference Include="..\..\Repository\OSeage.LMS.COM.Repository\OSeage.LMS.COM.Repository.csproj" />
+    <ProjectReference Include="..\..\Repository\OSeage.LMS.ERSCP.Repository\OSeage.LMS.ERSCP.Repository.csproj" />
+    <ProjectReference Include="..\..\Repository\OSeage.QTI.Repository\OSeage.QTI.Repository.csproj" />
+    <ProjectReference Include="..\..\Service\OSeage.LMS.COM.Service\OSeage.LMS.COM.Service.csproj" />
+    <ProjectReference Include="..\..\Service\OSeage.LMS.ERSCP.Service\OSeage.LMS.ERSCP.Service.csproj" />
+    <ProjectReference Include="..\..\Service\OSeage.QTI.Service\OSeage.QTI.Service.csproj" />
+    <ProjectReference Include="..\OSeage.XTKJ.API.Message\OSeage.XTKJ.API.Message.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="SmartSqlConfig\MSSQL\SmartSqlMapConfig-COM.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlConfig\MSSQL\SmartSqlMapConfig-ERSCP.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlConfig\MSSQL\SmartSqlMapConfig-QTI.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\Campus.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\Class.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\College.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\LogInfo.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\LoginLog.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\NewsInfo.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\NewsKind.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\PhysicalFile.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\Popedom.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\Role.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\RolePopedom.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\School.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\SchoolYear.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\Specialty.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\Subject.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\User.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\UserPopedom.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\UserRole.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.COM\YearSpecialty.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\CourseGroupUser.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\CourseModel.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\CoursePlan.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\CoursePlanClass.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\CoursePlanCourse.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\CoursePlanGroup.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\CoursePlanLecturer.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\CoursePlanStudent.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\KnowledgePoints.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\Sysdiagrams.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.ERSCP\UserStudy.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\BankRefCategory.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\Category.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\Content.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\ExamRecord.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\ExamScore.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\KnowledgePoints.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\Paper.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\PaperAnswer.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\PaperContent.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\PaperRefKnowledge.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\PaperRefQuestion.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\PaperRefUser.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\Question.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\QuestionAnswer.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\QuestionAnswerItem.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\QuestionBank.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\QuestionPreview.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\QuestionRefKnowledge.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\QuestionRefTag.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\QuestionSet.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\QuestionType.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartSqlMaps\MSSQL\Maps.QTI\Tag.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//*******************************
+// Create By 流年 公子
+// Date 2019-07-03 13:57
+// Code Generate By SmartCode
+// Code Generate Github : https://github.com/Ahoo-Wang/SmartCode
+//*******************************-->
+
+<SmartSqlMap Scope="CourseGroupUser" xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+
+    <ResultMaps>
+        <ResultMap Id="CourseGroupUserResultMap">
+                <Result Column="row_key" Property="RowKey" />
+                <Result Column="course_plan_key" Property="CoursePlanKey" />
+                <Result Column="teaching_info_key" Property="TeachingInfoKey" />
+                <Result Column="group_key" Property="GroupKey" />
+                <Result Column="user_key" Property="UserKey" />
+                <Result Column="creator" Property="Creator" />
+                <Result Column="create_time" Property="CreateTime" />
+                <Result Column="editor" Property="Editor" />
+                <Result Column="update_time" Property="UpdateTime" />
+                <Result Column="status" Property="Status" />
+        </ResultMap>
+    </ResultMaps>
+    <Statements>
+        <Statement Id="QueryParams">
+            <Where>
+                    <IsNotEmpty Prepend="And" Property="RowKey">
+                        T.row_key = @RowKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CoursePlanKey">
+                        T.course_plan_key = @CoursePlanKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="TeachingInfoKey">
+                        T.teaching_info_key = @TeachingInfoKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="GroupKey">
+                        T.group_key = @GroupKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="UserKey">
+                        T.user_key = @UserKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Creator">
+                        T.creator = @Creator
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CreateTime">
+                        T.create_time = @CreateTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Editor">
+                        T.editor = @Editor
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="UpdateTime">
+                        T.update_time = @UpdateTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Status">
+                        T.status = @Status
+                    </IsNotEmpty>
+            </Where>
+        </Statement>
+
+
+<!--新增-->
+<Statement Id="Insert">
+    INSERT INTO tbl_course_group_user
+    (
+      row_key,
+      course_plan_key,
+      teaching_info_key,
+      group_key,
+      user_key,
+      creator,
+      create_time,
+      editor,
+      update_time,
+      status
+    )
+    VALUES
+    (
+      @RowKey,
+      @CoursePlanKey,
+      @TeachingInfoKey,
+      @GroupKey,
+      @UserKey,
+      @Creator,
+      @CreateTime,
+      @Editor,
+      @UpdateTime,
+      @Status
+    )
+</Statement>
+
+<!--删除-->
+<Statement Id="Delete">
+    Delete From tbl_course_group_user
+    Where row_key=@RowKey
+</Statement>
+
+<!--更新-->
+<Statement Id="Update">
+    UPDATE tbl_course_group_user
+    <Set>
+                <IsProperty Prepend="," Property="CoursePlanKey">
+                    course_plan_key = @CoursePlanKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="TeachingInfoKey">
+                    teaching_info_key = @TeachingInfoKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="GroupKey">
+                    group_key = @GroupKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="UserKey">
+                    user_key = @UserKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="Creator">
+                    creator = @Creator
+                </IsProperty>
+                <IsProperty Prepend="," Property="CreateTime">
+                    create_time = @CreateTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="Editor">
+                    editor = @Editor
+                </IsProperty>
+                <IsProperty Prepend="," Property="UpdateTime">
+                    update_time = @UpdateTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="Status">
+                    status = @Status
+                </IsProperty>
+    </Set>
+    Where row_key=@RowKey
+</Statement>
+
+    <!--获取数据列-->
+    <Statement Id="Query" ResultMap="CourseGroupUserResultMap">
+        SELECT
+        <IsNotEmpty Prepend="Top" Property="Taken">
+            (@Taken)
+        </IsNotEmpty>
+        T.* From tbl_course_group_user T
+        <Include RefId="QueryParams"/>
+        <Switch Prepend="Order By" Property="OrderBy">
+            <Default>
+                T.row_key Desc
+            </Default>
+        </Switch>
+    </Statement>
+
+
+    <!--获取分页数据-->
+    <Statement Id="QueryByPage" ResultMap="CourseGroupUserResultMap">
+
+                Select TT.* From
+                (Select ROW_NUMBER() Over(Order By T.row_key Desc) Row_Index,T.* From tbl_course_group_user T With(NoLock)
+                <Include RefId="QueryParams"/>) TT
+                Where TT.Row_Index Between ((@PageIndex-1)*@PageSize+1) And (@PageIndex*@PageSize);
+                </Statement>
+
+
+<!--获取记录数-->
+<Statement Id="GetRecord">
+    Select Count(1) From tbl_course_group_user T
+    <Include RefId="QueryParams" />
+</Statement>
+
+    <!--获取表映射实体-->
+    <Statement Id="GetEntity" ResultMap="CourseGroupUserResultMap">
+        Select Top 1 T.* From tbl_course_group_user T With(NoLock)
+        <Where Min="1">
+                <IsNotEmpty Prepend="And" Property="RowKey">
+                    T.row_key= @RowKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CoursePlanKey">
+                    T.course_plan_key= @CoursePlanKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="TeachingInfoKey">
+                    T.teaching_info_key= @TeachingInfoKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="GroupKey">
+                    T.group_key= @GroupKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="UserKey">
+                    T.user_key= @UserKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Creator">
+                    T.creator= @Creator
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CreateTime">
+                    T.create_time= @CreateTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Editor">
+                    T.editor= @Editor
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="UpdateTime">
+                    T.update_time= @UpdateTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Status">
+                    T.status= @Status
+                </IsNotEmpty>
+        </Where>
+    </Statement>
+
+
+<!--是否存在该记录-->
+<Statement Id="IsExist">
+    Select Count(1) From tbl_course_group_user T
+    <Include RefId="QueryParams" />
+</Statement>
+
+
+    </Statements>
+</SmartSqlMap>

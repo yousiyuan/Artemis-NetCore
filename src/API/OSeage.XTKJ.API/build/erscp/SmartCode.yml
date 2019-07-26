@@ -1,0 +1,207 @@
+Module: OSeage.LMS.ERSCP
+Author: 流年 公子
+DataSource:
+  Name: DbTable
+  Parameters:
+    DbName: LMS_ERSCP
+    DbProvider: SqlServer
+    ConnectionString: Data Source=39.98.72.185;Initial Catalog=LMS_ERSCP;user id=sa;password=xxzx2008!
+Language: CSharp
+TemplateEngine: 
+   Name: Razor
+   Root: CSharp
+Output: 
+  Type: File
+  Path: 'E:\SmartSql-Starter'
+Parameters:
+  SmartSqlVersion: '4.0.71'
+  SmartSqlSchemaVersion: '4.0.65'
+  BuildDir: 'E:\SmartSql-Starter\build'
+  DockerImage: 'oseage.lms.erscp'
+  
+NamingConverter:
+  Table:
+    Tokenizer:
+      Type: Default
+      Parameters:
+        IgnorePrefix: 'tbl_'
+        Delimiter: '_'
+    Converter:
+      Type: Pascal
+      Parameters: { }
+  View:
+    Tokenizer:
+      Type: Default
+      Parameters:
+        IgnorePrefix: 'v_'
+        Delimiter: '_'
+    Converter:
+      Type: Pascal
+  Column:
+    Tokenizer:
+      Type: Default
+      Parameters:
+        Delimiter: '_'
+    Converter:
+      Type: Pascal
+      
+TableFilter:
+  IgnoreNoPKTable: true
+  IgnoreView: true
+
+# 构建任务
+Build:
+
+#  ClearDir:
+#    Type: Clear
+#    Parameters:
+#      Dirs: '.'
+
+  MakeBuildDir:
+    Type: Process
+    Parameters:
+      FileName: powershell
+      Args: mkdir '{{Project.Parameters.BuildDir}}'
+  Copy:
+    Type: Process
+    Parameters:
+      FileName: powershell
+      Args:  cp '{{Project.ConfigPath}}' '{{Project.Parameters.BuildDir}}'
+
+  Scaffolding:
+    Type: MultiTemplate
+    Output: 
+      Path: '.'
+    Parameters:
+      Templates: [{Key: 'Sln.cshtml',Output: {Name: '{{Project.Module}}',Extension: '.sln'}},
+        {Key: 'Sln-Directory.Build.cshtml',Output: {Name: 'Directory.Build',Extension: '.props'}},
+        {Key: 'Sln-Version.cshtml',Output: {Path: 'build',Name: 'version',Extension: '.props'}},
+        {Key: 'Sln-Dockerfile.cshtml',Output: {Name: 'Dockerfile',Extension: ''}},
+        {Key: 'Sln-DockerIgnore.cshtml',Output: {Name: '.dockerignore',Extension: ''}},
+        {Key: 'Sln-GitIgnore.cshtml',Output: {Name: '.gitignore',Extension: ''}},
+        {Key: "Proj-Entity.cshtml",Output: {Path: 'src/{{Project.Module}}.Entity',Name: '{{Project.Module}}.Entity',Extension: '.csproj'}},
+        {Key: "Proj-Repository.cshtml",Output: {Path: 'src/{{Project.Module}}.Repository',Name: '{{Project.Module}}.Repository',Extension: '.csproj'}},
+        {Key: "Proj-Service.cshtml",Output: {Path: 'src/{{Project.Module}}.Service',Name: '{{Project.Module}}.Service',Extension: '.csproj'}},
+        {Key: "Proj-API.cshtml",Output: {Path: 'src/{{Project.Module}}.API',Name: '{{Project.Module}}.API',Extension: '.csproj'}},
+        {Key: "API/LaunchSettings.cshtml",Output: {Path: 'src/{{Project.Module}}.API/Properties',Name: 'launchSettings',Extension: '.json'}},
+        {Key: "API/AppSettings.cshtml",Output: {Path: 'src/{{Project.Module}}.API',Name: 'appsettings',Extension: '.json'}},
+        {Key: "API/AppSettings-Development.cshtml",Output: {Path: 'src/{{Project.Module}}.API',Name: 'appsettings.Development',Extension: '.json'}},
+        {Key: "API/Program.cshtml",Output: {Path: 'src/{{Project.Module}}.API',Name: 'Program',Extension: '.cs'}},
+        {Key: "API/Startup.cshtml",Output: {Path: 'src/{{Project.Module}}.API',Name: 'Startup',Extension: '.cs'}},
+        {Key: "API/APIException.cshtml",Output: {Path: 'src/{{Project.Module}}.API/Exceptions',Name: 'APIException',Extension: '.cs'}},
+        {Key: "API/GlobalExceptionFilter.cshtml",Output: {Path: 'src/{{Project.Module}}.API/Filters',Name: 'GlobalExceptionFilter',Extension: '.cs'}},
+        {Key: "API/GlobalValidateModelFilter.cshtml",Output: {Path: 'src/{{Project.Module}}.API/Filters',Name: 'GlobalValidateModelFilter',Extension: '.cs'}},
+        {Key: "API/QueryRequest.cshtml",Output: {Path: 'src/{{Project.Module}}.API/Messages',Name: 'QueryRequest',Extension: '.cs'}},
+        {Key: "API/QueryByPageRequest.cshtml",Output: {Path: 'src/{{Project.Module}}.API/Messages',Name: 'QueryByPageRequest',Extension: '.cs'}},
+        {Key: "API/ResponseMessage.cshtml",Output: {Path: 'src/{{Project.Module}}.API/Messages',Name: 'ResponseMessage',Extension: '.cs'}},
+        {Key: "API/QueryResponse.cshtml",Output: {Path: 'src/{{Project.Module}}.API/Messages',Name: 'QueryResponse',Extension: '.cs'}},
+        {Key: "API/QueryByPageResponse.cshtml",Output: {Path: 'src/{{Project.Module}}.API/Messages',Name: 'QueryByPageResponse',Extension: '.cs'}},
+        {Key: "API/ResponseMessage.cshtml",Output: {Path: 'src/{{Project.Module}}.API/Messages',Name: 'ResponseMessage',Extension: '.cs'}},
+        {Key: "SqlMapConfig.cshtml",Output: {Path: 'src/{{Project.Module}}.Repository',Name: 'SmartSqlMapConfig',Extension: '.xml'}},
+        {Key: "SqlMapConfig.cshtml",Output: {Path: 'src/{{Project.Module}}.Repository',Name: 'SmartSqlMapConfig.Development',Extension: '.xml'}}]
+
+  Entity:
+    Type: Table
+    Module: Entity
+    TemplateEngine: 
+      Path: Entity.cshtml
+    IgnoreNoPKTable: false
+    IgnoreView: false
+    Output: 
+      Path: 'src/{{Project.Module}}.{{Build.Module}}'
+      Name: '{{Items.CurrentTable.ConvertedName}}'
+      Extension: '.cs'
+
+  Repository:
+    Type: Table
+    Module: Repository
+    TemplateEngine: 
+      Path: Repository.cshtml
+    Output: 
+      Path: 'src/{{Project.Module}}.{{Build.Module}}'
+      Name: 'I{{Items.CurrentTable.ConvertedName}}Repository'
+      Extension: .cs
+
+  Service:
+    Type: Table
+    Module: Service
+    TemplateEngine: 
+      Path: Service.cshtml
+    Output: 
+      Path: 'src/{{Project.Module}}.{{Build.Module}}'
+      Name: '{{Items.CurrentTable.ConvertedName}}Service'
+      Extension: .cs
+
+  APIController:
+    Type: Table
+    Module: API
+    TemplateEngine: 
+      Path: API/APIController.cshtml
+    Output: 
+      Path: 'src/{{Project.Module}}.{{Build.Module}}/Controllers'
+      Name: '{{Items.CurrentTable.ConvertedName}}Controller'
+      Extension: .cs
+
+  SqlMap:
+    Type: Table
+    TemplateEngine: 
+      Path: SqlMap.cshtml
+    Output: 
+      Path: 'src/{{Project.Module}}.Repository/Maps'
+      Name: '{{Items.CurrentTable.ConvertedName}}'
+      Extension: .xml
+
+# Please install dotnet-format first!
+# dotnet tool install -g dotnet-format
+  CodeFormat:
+    Type: Process
+    Parameters:
+      FileName: powershell
+      WorkingDirectory: '{{Project.Output.Path}}'
+      Args: dotnet-format
+
+  ReStore:
+    Type: Process
+    Parameters: 
+      FileName: powershell
+      WorkingDirectory: '{{Project.Output.Path}}'
+      Args: dotnet restore
+
+#  BuildDocker:
+#    Type: Process
+#    Parameters: 
+#      FileName: powershell
+#      WorkingDirectory: '{{Project.Output.Path}}'
+#      Args: docker build -t {{Project.Parameters.DockerImage}}:v1.0.0 .
+
+#  RunDocker:
+#    Type: Process
+#    Parameters: 
+#      FileName: powershell
+#      WorkingDirectory: '{{Project.Output.Path}}'
+#      Args: docker run --name {{Project.Parameters.DockerImage}} --rm -d -p 8008:80 {{Project.Parameters.DockerImage}}:v1.0.0 .
+
+#  Publish:
+#    Type: Process
+#    Parameters: 
+#      FileName: powershell
+#      WorkingDirectory: '{{Project.Output.Path}}'
+#      Args: dotnet publish -c Release -o '{{Project.Output.Path}}\publish'
+
+#  Run:
+#    Type: Process
+#    Parameters: 
+#      FileName: powershell
+#      WorkingDirectory: '{{Project.Output.Path}}\publish'
+#      CreateNoWindow: false
+#      RedirectStandardOutput: false
+#      RedirectStandardError: false
+#      WaitForExit: false
+#      WriteLines: ['dotnet {{Project.Module}}.API.dll']
+
+#  RunChrome:
+#    Type: Process
+#    Parameters: 
+#      FileName: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+#      CreateNoWindow: false
+#      Args: http://localhost:8008/swagger

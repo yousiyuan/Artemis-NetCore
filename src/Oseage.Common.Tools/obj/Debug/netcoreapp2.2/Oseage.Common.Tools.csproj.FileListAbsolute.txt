@@ -1,0 +1,9 @@
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Oseage.Common.Tools\bin\Debug\netcoreapp2.2\Oseage.Common.Tools.deps.json
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Oseage.Common.Tools\bin\Debug\netcoreapp2.2\Oseage.Common.Tools.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Oseage.Common.Tools\bin\Debug\netcoreapp2.2\Oseage.Common.Tools.pdb
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Oseage.Common.Tools\obj\Debug\netcoreapp2.2\Oseage.Common.Tools.csproj.CoreCompileInputs.cache
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Oseage.Common.Tools\obj\Debug\netcoreapp2.2\Oseage.Common.Tools.AssemblyInfoInputs.cache
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Oseage.Common.Tools\obj\Debug\netcoreapp2.2\Oseage.Common.Tools.AssemblyInfo.cs
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Oseage.Common.Tools\obj\Debug\netcoreapp2.2\Oseage.Common.Tools.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Oseage.Common.Tools\obj\Debug\netcoreapp2.2\Oseage.Common.Tools.pdb
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Oseage.Common.Tools\obj\Debug\netcoreapp2.2\Oseage.Common.Tools.csprojAssemblyReference.cache

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//*******************************
+// Create By 流年 公子
+// Date 2019-07-03 13:49
+// Code Generate By SmartCode
+// Code Generate Github : https://github.com/Ahoo-Wang/SmartCode
+//*******************************-->
+
+<SmartSqlMap Scope="QuestionAnswerItem" xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+
+    <ResultMaps>
+        <ResultMap Id="QuestionAnswerItemResultMap">
+                <Result Column="row_key" Property="RowKey" />
+                <Result Column="preview_key" Property="PreviewKey" />
+                <Result Column="question_key" Property="QuestionKey" />
+                <Result Column="answer_key" Property="AnswerKey" />
+                <Result Column="code" Property="Code" />
+                <Result Column="answer" Property="Answer" />
+                <Result Column="is_right" Property="IsRight" />
+                <Result Column="unit" Property="Unit" />
+                <Result Column="unit_nultiplier" Property="UnitNultiplier" />
+                <Result Column="score" Property="Score" />
+                <Result Column="penalty" Property="Penalty" />
+                <Result Column="user_key" Property="UserKey" />
+        </ResultMap>
+    </ResultMaps>
+    <Statements>
+        <Statement Id="QueryParams">
+            <Where>
+                    <IsNotEmpty Prepend="And" Property="RowKey">
+                        T.row_key = @RowKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="PreviewKey">
+                        T.preview_key = @PreviewKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="QuestionKey">
+                        T.question_key = @QuestionKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="AnswerKey">
+                        T.answer_key = @AnswerKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Code">
+                        T.code = @Code
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Answer">
+                        T.answer = @Answer
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="IsRight">
+                        T.is_right = @IsRight
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Unit">
+                        T.unit = @Unit
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="UnitNultiplier">
+                        T.unit_nultiplier = @UnitNultiplier
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Score">
+                        T.score = @Score
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Penalty">
+                        T.penalty = @Penalty
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="UserKey">
+                        T.user_key = @UserKey
+                    </IsNotEmpty>
+            </Where>
+        </Statement>
+
+
+<!--新增-->
+<Statement Id="Insert">
+    INSERT INTO tbl_question_answer_item
+    (
+      row_key,
+      preview_key,
+      question_key,
+      answer_key,
+      code,
+      answer,
+      is_right,
+      unit,
+      unit_nultiplier,
+      score,
+      penalty,
+      user_key
+    )
+    VALUES
+    (
+      @RowKey,
+      @PreviewKey,
+      @QuestionKey,
+      @AnswerKey,
+      @Code,
+      @Answer,
+      @IsRight,
+      @Unit,
+      @UnitNultiplier,
+      @Score,
+      @Penalty,
+      @UserKey
+    )
+</Statement>
+
+<!--删除-->
+<Statement Id="Delete">
+    Delete From tbl_question_answer_item
+    Where row_key=@RowKey
+</Statement>
+
+<!--更新-->
+<Statement Id="Update">
+    UPDATE tbl_question_answer_item
+    <Set>
+                <IsProperty Prepend="," Property="PreviewKey">
+                    preview_key = @PreviewKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="QuestionKey">
+                    question_key = @QuestionKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="AnswerKey">
+                    answer_key = @AnswerKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="Code">
+                    code = @Code
+                </IsProperty>
+                <IsProperty Prepend="," Property="Answer">
+                    answer = @Answer
+                </IsProperty>
+                <IsProperty Prepend="," Property="IsRight">
+                    is_right = @IsRight
+                </IsProperty>
+                <IsProperty Prepend="," Property="Unit">
+                    unit = @Unit
+                </IsProperty>
+                <IsProperty Prepend="," Property="UnitNultiplier">
+                    unit_nultiplier = @UnitNultiplier
+                </IsProperty>
+                <IsProperty Prepend="," Property="Score">
+                    score = @Score
+                </IsProperty>
+                <IsProperty Prepend="," Property="Penalty">
+                    penalty = @Penalty
+                </IsProperty>
+                <IsProperty Prepend="," Property="UserKey">
+                    user_key = @UserKey
+                </IsProperty>
+    </Set>
+    Where row_key=@RowKey
+</Statement>
+
+    <!--获取数据列-->
+    <Statement Id="Query" ResultMap="QuestionAnswerItemResultMap">
+        SELECT
+        <IsNotEmpty Prepend="Top" Property="Taken">
+            (@Taken)
+        </IsNotEmpty>
+        T.* From tbl_question_answer_item T
+        <Include RefId="QueryParams"/>
+        <Switch Prepend="Order By" Property="OrderBy">
+            <Default>
+                T.row_key Desc
+            </Default>
+        </Switch>
+    </Statement>
+
+
+    <!--获取分页数据-->
+    <Statement Id="QueryByPage" ResultMap="QuestionAnswerItemResultMap">
+
+                Select TT.* From
+                (Select ROW_NUMBER() Over(Order By T.row_key Desc) Row_Index,T.* From tbl_question_answer_item T With(NoLock)
+                <Include RefId="QueryParams"/>) TT
+                Where TT.Row_Index Between ((@PageIndex-1)*@PageSize+1) And (@PageIndex*@PageSize);
+                </Statement>
+
+
+<!--获取记录数-->
+<Statement Id="GetRecord">
+    Select Count(1) From tbl_question_answer_item T
+    <Include RefId="QueryParams" />
+</Statement>
+
+    <!--获取表映射实体-->
+    <Statement Id="GetEntity" ResultMap="QuestionAnswerItemResultMap">
+        Select Top 1 T.* From tbl_question_answer_item T With(NoLock)
+        <Where Min="1">
+                <IsNotEmpty Prepend="And" Property="RowKey">
+                    T.row_key= @RowKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="PreviewKey">
+                    T.preview_key= @PreviewKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="QuestionKey">
+                    T.question_key= @QuestionKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="AnswerKey">
+                    T.answer_key= @AnswerKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Code">
+                    T.code= @Code
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Answer">
+                    T.answer= @Answer
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="IsRight">
+                    T.is_right= @IsRight
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Unit">
+                    T.unit= @Unit
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="UnitNultiplier">
+                    T.unit_nultiplier= @UnitNultiplier
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Score">
+                    T.score= @Score
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Penalty">
+                    T.penalty= @Penalty
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="UserKey">
+                    T.user_key= @UserKey
+                </IsNotEmpty>
+        </Where>
+    </Statement>
+
+
+<!--是否存在该记录-->
+<Statement Id="IsExist">
+    Select Count(1) From tbl_question_answer_item T
+    <Include RefId="QueryParams" />
+</Statement>
+
+
+    </Statements>
+</SmartSqlMap>

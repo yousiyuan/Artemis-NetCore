@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspectInjector" Version="2.2.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="SmartSql.DIExtension" Version="4.0.71" />
+    <PackageReference Include="SmartSql.InvokeSync" Version="4.0.71" />
+  </ItemGroup>
+
+</Project>

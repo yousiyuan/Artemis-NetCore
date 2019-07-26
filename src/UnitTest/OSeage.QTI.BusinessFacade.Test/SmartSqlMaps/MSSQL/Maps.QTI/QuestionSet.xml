@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//*******************************
+// Create By 流年 公子
+// Date 2019-07-03 13:49
+// Code Generate By SmartCode
+// Code Generate Github : https://github.com/Ahoo-Wang/SmartCode
+//*******************************-->
+
+<SmartSqlMap Scope="QuestionSet" xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+
+    <ResultMaps>
+        <ResultMap Id="QuestionSetResultMap">
+                <Result Column="user_key" Property="UserKey" />
+                <Result Column="behavior" Property="Behavior" />
+                <Result Column="is_yes" Property="IsYes" />
+                <Result Column="score_display" Property="ScoreDisplay" />
+                <Result Column="score_fraction" Property="ScoreFraction" />
+                <Result Column="special_feedback" Property="SpecialFeedback" />
+                <Result Column="general_feedback" Property="GeneralFeedback" />
+                <Result Column="is_answer" Property="IsAnswer" />
+                <Result Column="answer_history" Property="AnswerHistory" />
+        </ResultMap>
+    </ResultMaps>
+    <Statements>
+        <Statement Id="QueryParams">
+            <Where>
+                    <IsNotEmpty Prepend="And" Property="UserKey">
+                        T.user_key = @UserKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Behavior">
+                        T.behavior = @Behavior
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="IsYes">
+                        T.is_yes = @IsYes
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="ScoreDisplay">
+                        T.score_display = @ScoreDisplay
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="ScoreFraction">
+                        T.score_fraction = @ScoreFraction
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="SpecialFeedback">
+                        T.special_feedback = @SpecialFeedback
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="GeneralFeedback">
+                        T.general_feedback = @GeneralFeedback
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="IsAnswer">
+                        T.is_answer = @IsAnswer
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="AnswerHistory">
+                        T.answer_history = @AnswerHistory
+                    </IsNotEmpty>
+            </Where>
+        </Statement>
+
+
+<!--新增-->
+<Statement Id="Insert">
+    INSERT INTO tbl_question_set
+    (
+      user_key,
+      behavior,
+      is_yes,
+      score_display,
+      score_fraction,
+      special_feedback,
+      general_feedback,
+      is_answer,
+      answer_history
+    )
+    VALUES
+    (
+      @UserKey,
+      @Behavior,
+      @IsYes,
+      @ScoreDisplay,
+      @ScoreFraction,
+      @SpecialFeedback,
+      @GeneralFeedback,
+      @IsAnswer,
+      @AnswerHistory
+    )
+</Statement>
+
+<!--删除-->
+<Statement Id="Delete">
+    Delete From tbl_question_set
+    Where user_key=@UserKey
+</Statement>
+
+<!--更新-->
+<Statement Id="Update">
+    UPDATE tbl_question_set
+    <Set>
+                <IsProperty Prepend="," Property="Behavior">
+                    behavior = @Behavior
+                </IsProperty>
+                <IsProperty Prepend="," Property="IsYes">
+                    is_yes = @IsYes
+                </IsProperty>
+                <IsProperty Prepend="," Property="ScoreDisplay">
+                    score_display = @ScoreDisplay
+                </IsProperty>
+                <IsProperty Prepend="," Property="ScoreFraction">
+                    score_fraction = @ScoreFraction
+                </IsProperty>
+                <IsProperty Prepend="," Property="SpecialFeedback">
+                    special_feedback = @SpecialFeedback
+                </IsProperty>
+                <IsProperty Prepend="," Property="GeneralFeedback">
+                    general_feedback = @GeneralFeedback
+                </IsProperty>
+                <IsProperty Prepend="," Property="IsAnswer">
+                    is_answer = @IsAnswer
+                </IsProperty>
+                <IsProperty Prepend="," Property="AnswerHistory">
+                    answer_history = @AnswerHistory
+                </IsProperty>
+    </Set>
+    Where user_key=@UserKey
+</Statement>
+
+    <!--获取数据列-->
+    <Statement Id="Query" ResultMap="QuestionSetResultMap">
+        SELECT
+        <IsNotEmpty Prepend="Top" Property="Taken">
+            (@Taken)
+        </IsNotEmpty>
+        T.* From tbl_question_set T
+        <Include RefId="QueryParams"/>
+        <Switch Prepend="Order By" Property="OrderBy">
+            <Default>
+                T.user_key Desc
+            </Default>
+        </Switch>
+    </Statement>
+
+
+    <!--获取分页数据-->
+    <Statement Id="QueryByPage" ResultMap="QuestionSetResultMap">
+
+                Select TT.* From
+                (Select ROW_NUMBER() Over(Order By T.user_key Desc) Row_Index,T.* From tbl_question_set T With(NoLock)
+                <Include RefId="QueryParams"/>) TT
+                Where TT.Row_Index Between ((@PageIndex-1)*@PageSize+1) And (@PageIndex*@PageSize);
+                </Statement>
+
+
+<!--获取记录数-->
+<Statement Id="GetRecord">
+    Select Count(1) From tbl_question_set T
+    <Include RefId="QueryParams" />
+</Statement>
+
+    <!--获取表映射实体-->
+    <Statement Id="GetEntity" ResultMap="QuestionSetResultMap">
+        Select Top 1 T.* From tbl_question_set T With(NoLock)
+        <Where Min="1">
+                <IsNotEmpty Prepend="And" Property="UserKey">
+                    T.user_key= @UserKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Behavior">
+                    T.behavior= @Behavior
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="IsYes">
+                    T.is_yes= @IsYes
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="ScoreDisplay">
+                    T.score_display= @ScoreDisplay
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="ScoreFraction">
+                    T.score_fraction= @ScoreFraction
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="SpecialFeedback">
+                    T.special_feedback= @SpecialFeedback
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="GeneralFeedback">
+                    T.general_feedback= @GeneralFeedback
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="IsAnswer">
+                    T.is_answer= @IsAnswer
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="AnswerHistory">
+                    T.answer_history= @AnswerHistory
+                </IsNotEmpty>
+        </Where>
+    </Statement>
+
+
+<!--是否存在该记录-->
+<Statement Id="IsExist">
+    Select Count(1) From tbl_question_set T
+    <Include RefId="QueryParams" />
+</Statement>
+
+
+    </Statements>
+</SmartSqlMap>

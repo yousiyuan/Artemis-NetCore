@@ -1,0 +1,47 @@
+﻿[2019/7/6 21:50:32] [Info] rewrite url [/com/demo/hello/{name}-{value}] to [/com/demo/hello]
+[2019/7/6 21:50:32] [Info] register DemoController.Hello to [GET:/com/demo/hello]
+[2019/7/6 21:50:32] [Info] register DemoController.Post to [POST:/com/demo/post]
+[2019/7/6 21:50:32] [Info] register DemoController.PostForm to [POST:/com/demo/postform]
+[2019/7/6 21:50:32] [Info] register DemoController.UploadFile to [POST:/com/demo/uploadfile]
+[2019/7/6 21:50:32] [Info] register DemoController.PostStream to [POST:/com/demo/poststream]
+[2019/7/6 21:50:32] [Info] init BeetleX.FastHttpApi.ServerController controller path C:\Users\artemis\.nuget\packages\beetlex.fasthttpapi\1.5.4.2\lib\netcoreapp2.1\
+[2019/7/6 21:50:32] [Info] register ServerController.__ServerStatus to [GET:/__serverstatus]
+[2019/7/6 21:50:32] [Info] register ServerController.__SetSettings to [POST:/__setsettings]
+[2019/7/6 21:50:32] [Info] register ServerController.__ChangeAccessKey to [GET:/__changeaccesskey]
+[2019/7/6 21:50:32] [Info] register ServerController.__GetSettings to [GET:/__getsettings]
+[2019/7/6 21:50:32] [Info] register ServerController.__LogConnect to [GET:/__logconnect]
+[2019/7/6 21:50:32] [Info] register ServerController.__ListLog to [GET:/__listlog]
+[2019/7/6 21:50:32] [Info] register ServerController.__GetOptions to [GET:/__getoptions]
+[2019/7/6 21:50:32] [Info] register ServerController.__UploadModule to [POST:/__uploadmodule]
+[2019/7/6 21:50:32] [Info] register ServerController.__SetActionMaxrps to [POST:/__setactionmaxrps]
+[2019/7/6 21:50:32] [Info] register ServerController.__SetOptions to [POST:/__setoptions]
+[2019/7/6 21:50:32] [Info] detection sessions timeout with 3600s
+[2019/7/6 21:50:32] [Info] listen 127.0.0.1@9090 success ssl:False
+[2019/7/6 21:50:32] [Warring] no serverGC mode,please enable serverGC mode!
+[2019/7/6 21:50:33] [Info] BeetleX [V:1.3.2.0]
+[2019/7/6 21:50:33] [Info] Environment [ServerGC:False][IOQueue:False|n:2][Threads:4][Private Buffer:False|2048KB]
+[2019/7/6 21:50:33] [Info] BeetleX FastHttpApi [IOQueue:False|Threads:2] [V:1.5.4.2]
+[2019/7/6 21:50:33] [Debug] invoke options reload event!
+[2019/7/6 21:50:33] [Debug] invoke server started event!
+[2019/7/6 21:50:51] [Debug] 127.0.0.1:7220 update active time
+[2019/7/6 21:50:51] [Info] session connected from 127.0.0.1:7220@1
+[2019/7/6 21:50:51] [Debug] 127.0.0.1:7220 begin receive
+[2019/7/6 21:50:51] [Trace] 127.0.0.1:7220 receive hex:474554202f636f6d2f64656d6f2f48656c6c6f3f6e616d653d2545362538382539312545362539382541462545352538352541432545352541442539302676616c75653d25453525413525423925453625393825414625453825384525383925453525413825394320485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f782d7777772d666f726d2d75726c656e636f6465640d0a486f73743a206c6f63616c686f73740d0a0d0a
+[2019/7/6 21:50:51] [Debug] 127.0.0.1:7220 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/6 21:50:51] [Debug] 127.0.0.1:7220 update active time
+[2019/7/6 21:50:51] [Info] 127.0.0.1:7220 GET /com/demo/Hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C request
+[2019/7/6 21:50:51] [Debug] 127.0.0.1:7220 GET /com/demo/Hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C request detail GET /com/demo/Hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C
+Content-Type=application/x-www-form-urlencoded
+Host=localhost
+X-Real-IP=127.0.0.1:7220
+
+[2019/7/6 21:50:51] [Debug] 127.0.0.1:7220 GET /com/demo/Hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C set options
+[2019/7/6 21:50:51] [Info] 127.0.0.1:7220 http GET /com/demo/hello use time:24ms
+[2019/7/6 21:50:51] [Debug] 127.0.0.1:7220 GET /com/demo/Hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C response 200 OK
+Access-Control-Allow-Origin=*
+
+[2019/7/6 21:50:51] [Info] 127.0.0.1:7220 GET /com/demo/Hello?name=%E6%88%91%E6%98%AF%E5%85%AC%E5%AD%90&value=%E5%A5%B9%E6%98%AF%E8%8E%89%E5%A8%9C response 200 OK
+[2019/7/6 21:50:51] [Trace] 127.0.0.1:7220 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a4163636573732d436f6e74726f6c2d416c6c6f772d4f726967696e3a202a0d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a446174653a205361742c203036204a756c20323031392031333a35303a353020474d540d0a436f6e74656e742d4c656e6774683a20313731202020202020200d0a0d0a7b2255726c223a222f636f6d2f64656d6f2f68656c6c6f222c224572726f72223a6e756c6c2c22436f6465223a3230302c22537461636b5472616365223a6e756c6c2c2244617461223a7b2248656c6c6f223a2268656c6c6f20e68891e698afe585ace5ad903de5a5b9e698afe88e89e5a89c222c2254696d65223a22323031392d30372d30365432313a35303a35312e313932303931372b30383a3030227d2c224944223a6e756c6c7d
+[2019/7/6 21:50:51] [Debug]  127.0.0.1:7220 connected
+[2019/7/6 21:50:51] [Debug] 127.0.0.1:7220 receive close error ConnectionReset receive:0
+[2019/7/6 21:50:51] [Info] session 127.0.0.1:7220@1 disconnected

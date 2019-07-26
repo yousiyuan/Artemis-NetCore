@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//*******************************
+// Create By 流年 公子
+// Date 2019-07-03 14:02
+// Code Generate By SmartCode
+// Code Generate Github : https://github.com/Ahoo-Wang/SmartCode
+//*******************************-->
+<SmartSqlMapConfig xmlns="http://SmartSql.net/schemas/SmartSqlMapConfig.xsd">
+    <Settings IsCacheEnabled="true" />
+    <Properties>
+        <Property Name="ConnectionString" Value="Data Source=127.0.0.1;Initial Catalog=LMS_COM;user id=sa;password=123456" />
+        <Property Name="ScriptBuilder" Value="SmartSql.ScriptTag.ScriptBuilder,SmartSql.ScriptTag" />
+            <Property Name="JsonTypeHandler" Value="SmartSql.TypeHandler.JsonTypeHandler`1,SmartSql.TypeHandler" />
+    </Properties>
+    <Database>
+        <DbProvider Name="SqlServer" />
+        <Write Name="LMS_COM" ConnectionString="${ConnectionString}" />
+    </Database>
+    <TagBuilders>
+        <TagBuilder Name="Script" Type="${ScriptBuilder}" />
+    </TagBuilders>
+    <IdGenerators>
+        <IdGenerator Name="SnowflakeId" Type="SnowflakeId">
+            <Properties>
+                <Property Name="WorkerIdBits" Value="5" />
+                <Property Name="WorkerId" Value="1" />
+                <Property Name="Sequence" Value="0" />
+            </Properties>
+        </IdGenerator>
+    </IdGenerators>
+    <SmartSqlMaps>
+        <SmartSqlMap Path="SmartSqlMaps/MSSQL/Maps.COM" Type="Directory"></SmartSqlMap>
+    </SmartSqlMaps>
+</SmartSqlMapConfig>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//*******************************
+// Create By 流年 公子
+// Date 2019-07-03 13:49
+// Code Generate By SmartCode
+// Code Generate Github : https://github.com/Ahoo-Wang/SmartCode
+//*******************************-->
+
+<SmartSqlMap Scope="QuestionBank" xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+
+    <ResultMaps>
+        <ResultMap Id="QuestionBankResultMap">
+                <Result Column="row_key" Property="RowKey" />
+                <Result Column="question_bank_name" Property="QuestionBankName" />
+                <Result Column="question_bank_type" Property="QuestionBankType" />
+                <Result Column="status" Property="Status" />
+                <Result Column="user_key" Property="UserKey" />
+                <Result Column="create_time" Property="CreateTime" />
+                <Result Column="update_time" Property="UpdateTime" />
+                <Result Column="remark" Property="Remark" />
+        </ResultMap>
+    </ResultMaps>
+    <Statements>
+        <Statement Id="QueryParams">
+            <Where>
+                    <IsNotEmpty Prepend="And" Property="RowKey">
+                        T.row_key = @RowKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="QuestionBankName">
+                        T.question_bank_name = @QuestionBankName
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="QuestionBankType">
+                        T.question_bank_type = @QuestionBankType
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Status">
+                        T.status = @Status
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="UserKey">
+                        T.user_key = @UserKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CreateTime">
+                        T.create_time = @CreateTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="UpdateTime">
+                        T.update_time = @UpdateTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Remark">
+                        T.remark = @Remark
+                    </IsNotEmpty>
+            </Where>
+        </Statement>
+
+
+<!--新增-->
+<Statement Id="Insert">
+    INSERT INTO tbl_question_bank
+    (
+      row_key,
+      question_bank_name,
+      question_bank_type,
+      status,
+      user_key,
+      create_time,
+      update_time,
+      remark
+    )
+    VALUES
+    (
+      @RowKey,
+      @QuestionBankName,
+      @QuestionBankType,
+      @Status,
+      @UserKey,
+      @CreateTime,
+      @UpdateTime,
+      @Remark
+    )
+</Statement>
+
+<!--删除-->
+<Statement Id="Delete">
+    Delete From tbl_question_bank
+    Where row_key=@RowKey
+</Statement>
+
+<!--更新-->
+<Statement Id="Update">
+    UPDATE tbl_question_bank
+    <Set>
+                <IsProperty Prepend="," Property="QuestionBankName">
+                    question_bank_name = @QuestionBankName
+                </IsProperty>
+                <IsProperty Prepend="," Property="QuestionBankType">
+                    question_bank_type = @QuestionBankType
+                </IsProperty>
+                <IsProperty Prepend="," Property="Status">
+                    status = @Status
+                </IsProperty>
+                <IsProperty Prepend="," Property="UserKey">
+                    user_key = @UserKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="CreateTime">
+                    create_time = @CreateTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="UpdateTime">
+                    update_time = @UpdateTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="Remark">
+                    remark = @Remark
+                </IsProperty>
+    </Set>
+    Where row_key=@RowKey
+</Statement>
+
+    <!--获取数据列-->
+    <Statement Id="Query" ResultMap="QuestionBankResultMap">
+        SELECT
+        <IsNotEmpty Prepend="Top" Property="Taken">
+            (@Taken)
+        </IsNotEmpty>
+        T.* From tbl_question_bank T
+        <Include RefId="QueryParams"/>
+        <Switch Prepend="Order By" Property="OrderBy">
+            <Default>
+                T.row_key Desc
+            </Default>
+        </Switch>
+    </Statement>
+
+
+    <!--获取分页数据-->
+    <Statement Id="QueryByPage" ResultMap="QuestionBankResultMap">
+
+                Select TT.* From
+                (Select ROW_NUMBER() Over(Order By T.row_key Desc) Row_Index,T.* From tbl_question_bank T With(NoLock)
+                <Include RefId="QueryParams"/>) TT
+                Where TT.Row_Index Between ((@PageIndex-1)*@PageSize+1) And (@PageIndex*@PageSize);
+                </Statement>
+
+
+<!--获取记录数-->
+<Statement Id="GetRecord">
+    Select Count(1) From tbl_question_bank T
+    <Include RefId="QueryParams" />
+</Statement>
+
+    <!--获取表映射实体-->
+    <Statement Id="GetEntity" ResultMap="QuestionBankResultMap">
+        Select Top 1 T.* From tbl_question_bank T With(NoLock)
+        <Where Min="1">
+                <IsNotEmpty Prepend="And" Property="RowKey">
+                    T.row_key= @RowKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="QuestionBankName">
+                    T.question_bank_name= @QuestionBankName
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="QuestionBankType">
+                    T.question_bank_type= @QuestionBankType
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Status">
+                    T.status= @Status
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="UserKey">
+                    T.user_key= @UserKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CreateTime">
+                    T.create_time= @CreateTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="UpdateTime">
+                    T.update_time= @UpdateTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Remark">
+                    T.remark= @Remark
+                </IsNotEmpty>
+        </Where>
+    </Statement>
+
+
+<!--是否存在该记录-->
+<Statement Id="IsExist">
+    Select Count(1) From tbl_question_bank T
+    <Include RefId="QueryParams" />
+</Statement>
+
+
+    </Statements>
+</SmartSqlMap>

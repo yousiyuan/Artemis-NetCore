@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//*******************************
+// Create By 流年 公子
+// Date 2019-07-03 13:49
+// Code Generate By SmartCode
+// Code Generate Github : https://github.com/Ahoo-Wang/SmartCode
+//*******************************-->
+
+<SmartSqlMap Scope="QuestionRefKnowledge" xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+
+    <ResultMaps>
+        <ResultMap Id="QuestionRefKnowledgeResultMap">
+                <Result Column="question_key" Property="QuestionKey" />
+                <Result Column="knowledge_key" Property="KnowledgeKey" />
+                <Result Column="sort" Property="Sort" />
+                <Result Column="status" Property="Status" />
+        </ResultMap>
+    </ResultMaps>
+    <Statements>
+        <Statement Id="QueryParams">
+            <Where>
+                    <IsNotEmpty Prepend="And" Property="QuestionKey">
+                        T.question_key = @QuestionKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="KnowledgeKey">
+                        T.knowledge_key = @KnowledgeKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Sort">
+                        T.sort = @Sort
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Status">
+                        T.status = @Status
+                    </IsNotEmpty>
+            </Where>
+        </Statement>
+
+
+<!--新增-->
+<Statement Id="Insert">
+    INSERT INTO tbl_question_ref_knowledge
+    (
+      question_key,
+      knowledge_key,
+      sort,
+      status
+    )
+    VALUES
+    (
+      @QuestionKey,
+      @KnowledgeKey,
+      @Sort,
+      @Status
+    )
+</Statement>
+
+<!--删除-->
+<Statement Id="Delete">
+    Delete From tbl_question_ref_knowledge
+    Where question_key=@QuestionKey
+</Statement>
+
+<!--更新-->
+<Statement Id="Update">
+    UPDATE tbl_question_ref_knowledge
+    <Set>
+                <IsProperty Prepend="," Property="KnowledgeKey">
+                    knowledge_key = @KnowledgeKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="Sort">
+                    sort = @Sort
+                </IsProperty>
+                <IsProperty Prepend="," Property="Status">
+                    status = @Status
+                </IsProperty>
+    </Set>
+    Where question_key=@QuestionKey
+</Statement>
+
+    <!--获取数据列-->
+    <Statement Id="Query" ResultMap="QuestionRefKnowledgeResultMap">
+        SELECT
+        <IsNotEmpty Prepend="Top" Property="Taken">
+            (@Taken)
+        </IsNotEmpty>
+        T.* From tbl_question_ref_knowledge T
+        <Include RefId="QueryParams"/>
+        <Switch Prepend="Order By" Property="OrderBy">
+            <Default>
+                T.question_key Desc
+            </Default>
+        </Switch>
+    </Statement>
+
+
+    <!--获取分页数据-->
+    <Statement Id="QueryByPage" ResultMap="QuestionRefKnowledgeResultMap">
+
+                Select TT.* From
+                (Select ROW_NUMBER() Over(Order By T.question_key Desc) Row_Index,T.* From tbl_question_ref_knowledge T With(NoLock)
+                <Include RefId="QueryParams"/>) TT
+                Where TT.Row_Index Between ((@PageIndex-1)*@PageSize+1) And (@PageIndex*@PageSize);
+                </Statement>
+
+
+<!--获取记录数-->
+<Statement Id="GetRecord">
+    Select Count(1) From tbl_question_ref_knowledge T
+    <Include RefId="QueryParams" />
+</Statement>
+
+    <!--获取表映射实体-->
+    <Statement Id="GetEntity" ResultMap="QuestionRefKnowledgeResultMap">
+        Select Top 1 T.* From tbl_question_ref_knowledge T With(NoLock)
+        <Where Min="1">
+                <IsNotEmpty Prepend="And" Property="QuestionKey">
+                    T.question_key= @QuestionKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="KnowledgeKey">
+                    T.knowledge_key= @KnowledgeKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Sort">
+                    T.sort= @Sort
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Status">
+                    T.status= @Status
+                </IsNotEmpty>
+        </Where>
+    </Statement>
+
+
+<!--是否存在该记录-->
+<Statement Id="IsExist">
+    Select Count(1) From tbl_question_ref_knowledge T
+    <Include RefId="QueryParams" />
+</Statement>
+
+
+    </Statements>
+</SmartSqlMap>

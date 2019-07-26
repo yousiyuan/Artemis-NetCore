@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//*******************************
+// Create By 流年 公子
+// Date 2019-07-03 14:02
+// Code Generate By SmartCode
+// Code Generate Github : https://github.com/Ahoo-Wang/SmartCode
+//*******************************-->
+
+<SmartSqlMap Scope="College" xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+
+    <ResultMaps>
+        <ResultMap Id="CollegeResultMap">
+                <Result Column="row_key" Property="RowKey" />
+                <Result Column="college_name" Property="CollegeName" />
+                <Result Column="campus_key" Property="CampusKey" />
+                <Result Column="parent_key" Property="ParentKey" />
+                <Result Column="college_principal" Property="CollegePrincipal" />
+                <Result Column="college_address" Property="CollegeAddress" />
+                <Result Column="college_note" Property="CollegeNote" />
+                <Result Column="college_status" Property="CollegeStatus" />
+                <Result Column="creator" Property="Creator" />
+                <Result Column="create_time" Property="CreateTime" />
+                <Result Column="editor" Property="Editor" />
+                <Result Column="update_time" Property="UpdateTime" />
+                <Result Column="status" Property="Status" />
+        </ResultMap>
+    </ResultMaps>
+    <Statements>
+        <Statement Id="QueryParams">
+            <Where>
+                    <IsNotEmpty Prepend="And" Property="RowKey">
+                        T.row_key = @RowKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CollegeName">
+                        T.college_name = @CollegeName
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CampusKey">
+                        T.campus_key = @CampusKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="ParentKey">
+                        T.parent_key = @ParentKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CollegePrincipal">
+                        T.college_principal = @CollegePrincipal
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CollegeAddress">
+                        T.college_address = @CollegeAddress
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CollegeNote">
+                        T.college_note = @CollegeNote
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CollegeStatus">
+                        T.college_status = @CollegeStatus
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Creator">
+                        T.creator = @Creator
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CreateTime">
+                        T.create_time = @CreateTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Editor">
+                        T.editor = @Editor
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="UpdateTime">
+                        T.update_time = @UpdateTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Status">
+                        T.status = @Status
+                    </IsNotEmpty>
+            </Where>
+        </Statement>
+
+
+<!--新增-->
+<Statement Id="Insert">
+    INSERT INTO tbl_college
+    (
+      row_key,
+      college_name,
+      campus_key,
+      parent_key,
+      college_principal,
+      college_address,
+      college_note,
+      college_status,
+      creator,
+      create_time,
+      editor,
+      update_time,
+      status
+    )
+    VALUES
+    (
+      @RowKey,
+      @CollegeName,
+      @CampusKey,
+      @ParentKey,
+      @CollegePrincipal,
+      @CollegeAddress,
+      @CollegeNote,
+      @CollegeStatus,
+      @Creator,
+      @CreateTime,
+      @Editor,
+      @UpdateTime,
+      @Status
+    )
+</Statement>
+
+<!--删除-->
+<Statement Id="Delete">
+    Delete From tbl_college
+    Where row_key=@RowKey
+</Statement>
+
+<!--更新-->
+<Statement Id="Update">
+    UPDATE tbl_college
+    <Set>
+                <IsProperty Prepend="," Property="CollegeName">
+                    college_name = @CollegeName
+                </IsProperty>
+                <IsProperty Prepend="," Property="CampusKey">
+                    campus_key = @CampusKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="ParentKey">
+                    parent_key = @ParentKey
+                </IsProperty>
+                <IsProperty Prepend="," Property="CollegePrincipal">
+                    college_principal = @CollegePrincipal
+                </IsProperty>
+                <IsProperty Prepend="," Property="CollegeAddress">
+                    college_address = @CollegeAddress
+                </IsProperty>
+                <IsProperty Prepend="," Property="CollegeNote">
+                    college_note = @CollegeNote
+                </IsProperty>
+                <IsProperty Prepend="," Property="CollegeStatus">
+                    college_status = @CollegeStatus
+                </IsProperty>
+                <IsProperty Prepend="," Property="Creator">
+                    creator = @Creator
+                </IsProperty>
+                <IsProperty Prepend="," Property="CreateTime">
+                    create_time = @CreateTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="Editor">
+                    editor = @Editor
+                </IsProperty>
+                <IsProperty Prepend="," Property="UpdateTime">
+                    update_time = @UpdateTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="Status">
+                    status = @Status
+                </IsProperty>
+    </Set>
+    Where row_key=@RowKey
+</Statement>
+
+    <!--获取数据列-->
+    <Statement Id="Query" ResultMap="CollegeResultMap">
+        SELECT
+        <IsNotEmpty Prepend="Top" Property="Taken">
+            (@Taken)
+        </IsNotEmpty>
+        T.* From tbl_college T
+        <Include RefId="QueryParams"/>
+        <Switch Prepend="Order By" Property="OrderBy">
+            <Default>
+                T.row_key Desc
+            </Default>
+        </Switch>
+    </Statement>
+
+
+    <!--获取分页数据-->
+    <Statement Id="QueryByPage" ResultMap="CollegeResultMap">
+
+                Select TT.* From
+                (Select ROW_NUMBER() Over(Order By T.row_key Desc) Row_Index,T.* From tbl_college T With(NoLock)
+                <Include RefId="QueryParams"/>) TT
+                Where TT.Row_Index Between ((@PageIndex-1)*@PageSize+1) And (@PageIndex*@PageSize);
+                </Statement>
+
+
+<!--获取记录数-->
+<Statement Id="GetRecord">
+    Select Count(1) From tbl_college T
+    <Include RefId="QueryParams" />
+</Statement>
+
+    <!--获取表映射实体-->
+    <Statement Id="GetEntity" ResultMap="CollegeResultMap">
+        Select Top 1 T.* From tbl_college T With(NoLock)
+        <Where Min="1">
+                <IsNotEmpty Prepend="And" Property="RowKey">
+                    T.row_key= @RowKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CollegeName">
+                    T.college_name= @CollegeName
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CampusKey">
+                    T.campus_key= @CampusKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="ParentKey">
+                    T.parent_key= @ParentKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CollegePrincipal">
+                    T.college_principal= @CollegePrincipal
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CollegeAddress">
+                    T.college_address= @CollegeAddress
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CollegeNote">
+                    T.college_note= @CollegeNote
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CollegeStatus">
+                    T.college_status= @CollegeStatus
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Creator">
+                    T.creator= @Creator
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CreateTime">
+                    T.create_time= @CreateTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Editor">
+                    T.editor= @Editor
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="UpdateTime">
+                    T.update_time= @UpdateTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Status">
+                    T.status= @Status
+                </IsNotEmpty>
+        </Where>
+    </Statement>
+
+
+<!--是否存在该记录-->
+<Statement Id="IsExist">
+    Select Count(1) From tbl_college T
+    <Include RefId="QueryParams" />
+</Statement>
+
+
+    </Statements>
+</SmartSqlMap>

@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.LMS.ERSCP.Entity\\OSeage.LMS.ERSCP.Entity.csproj": {}
+  },
+  "projects": {
+    "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.LMS.ERSCP.Entity\\OSeage.LMS.ERSCP.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.LMS.ERSCP.Entity\\OSeage.LMS.ERSCP.Entity.csproj",
+        "projectName": "OSeage.LMS.ERSCP.Entity",
+        "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.LMS.ERSCP.Entity\\OSeage.LMS.ERSCP.Entity.csproj",
+        "packagesPath": "C:\\Users\\artemis\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.LMS.ERSCP.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artemis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

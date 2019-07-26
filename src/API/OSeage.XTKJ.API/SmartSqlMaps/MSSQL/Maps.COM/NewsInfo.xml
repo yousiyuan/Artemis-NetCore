@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//*******************************
+// Create By 流年 公子
+// Date 2019-07-03 14:02
+// Code Generate By SmartCode
+// Code Generate Github : https://github.com/Ahoo-Wang/SmartCode
+//*******************************-->
+
+<SmartSqlMap Scope="NewsInfo" xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+
+    <ResultMaps>
+        <ResultMap Id="NewsInfoResultMap">
+                <Result Column="row_key" Property="RowKey" />
+                <Result Column="title" Property="Title" />
+                <Result Column="publish_time" Property="PublishTime" />
+                <Result Column="news_kind" Property="NewsKind" />
+                <Result Column="news_type" Property="NewsType" />
+                <Result Column="path" Property="Path" />
+                <Result Column="attach_data" Property="AttachData" />
+                <Result Column="flag" Property="Flag" />
+                <Result Column="content" Property="Content" />
+                <Result Column="view_count" Property="ViewCount" />
+                <Result Column="note" Property="Note" />
+                <Result Column="creator" Property="Creator" />
+                <Result Column="create_time" Property="CreateTime" />
+                <Result Column="editor" Property="Editor" />
+                <Result Column="update_time" Property="UpdateTime" />
+                <Result Column="status" Property="Status" />
+        </ResultMap>
+    </ResultMaps>
+    <Statements>
+        <Statement Id="QueryParams">
+            <Where>
+                    <IsNotEmpty Prepend="And" Property="RowKey">
+                        T.row_key = @RowKey
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Title">
+                        T.title = @Title
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="PublishTime">
+                        T.publish_time = @PublishTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="NewsKind">
+                        T.news_kind = @NewsKind
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="NewsType">
+                        T.news_type = @NewsType
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Path">
+                        T.path = @Path
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="AttachData">
+                        T.attach_data = @AttachData
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Flag">
+                        T.flag = @Flag
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Content">
+                        T.content = @Content
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="ViewCount">
+                        T.view_count = @ViewCount
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Note">
+                        T.note = @Note
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Creator">
+                        T.creator = @Creator
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="CreateTime">
+                        T.create_time = @CreateTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Editor">
+                        T.editor = @Editor
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="UpdateTime">
+                        T.update_time = @UpdateTime
+                    </IsNotEmpty>
+                    <IsNotEmpty Prepend="And" Property="Status">
+                        T.status = @Status
+                    </IsNotEmpty>
+            </Where>
+        </Statement>
+
+
+<!--新增-->
+<Statement Id="Insert">
+    INSERT INTO tbl_news_info
+    (
+      row_key,
+      title,
+      publish_time,
+      news_kind,
+      news_type,
+      path,
+      attach_data,
+      flag,
+      content,
+      view_count,
+      note,
+      creator,
+      create_time,
+      editor,
+      update_time,
+      status
+    )
+    VALUES
+    (
+      @RowKey,
+      @Title,
+      @PublishTime,
+      @NewsKind,
+      @NewsType,
+      @Path,
+      @AttachData,
+      @Flag,
+      @Content,
+      @ViewCount,
+      @Note,
+      @Creator,
+      @CreateTime,
+      @Editor,
+      @UpdateTime,
+      @Status
+    )
+</Statement>
+
+<!--删除-->
+<Statement Id="Delete">
+    Delete From tbl_news_info
+    Where row_key=@RowKey
+</Statement>
+
+<!--更新-->
+<Statement Id="Update">
+    UPDATE tbl_news_info
+    <Set>
+                <IsProperty Prepend="," Property="Title">
+                    title = @Title
+                </IsProperty>
+                <IsProperty Prepend="," Property="PublishTime">
+                    publish_time = @PublishTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="NewsKind">
+                    news_kind = @NewsKind
+                </IsProperty>
+                <IsProperty Prepend="," Property="NewsType">
+                    news_type = @NewsType
+                </IsProperty>
+                <IsProperty Prepend="," Property="Path">
+                    path = @Path
+                </IsProperty>
+                <IsProperty Prepend="," Property="AttachData">
+                    attach_data = @AttachData
+                </IsProperty>
+                <IsProperty Prepend="," Property="Flag">
+                    flag = @Flag
+                </IsProperty>
+                <IsProperty Prepend="," Property="Content">
+                    content = @Content
+                </IsProperty>
+                <IsProperty Prepend="," Property="ViewCount">
+                    view_count = @ViewCount
+                </IsProperty>
+                <IsProperty Prepend="," Property="Note">
+                    note = @Note
+                </IsProperty>
+                <IsProperty Prepend="," Property="Creator">
+                    creator = @Creator
+                </IsProperty>
+                <IsProperty Prepend="," Property="CreateTime">
+                    create_time = @CreateTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="Editor">
+                    editor = @Editor
+                </IsProperty>
+                <IsProperty Prepend="," Property="UpdateTime">
+                    update_time = @UpdateTime
+                </IsProperty>
+                <IsProperty Prepend="," Property="Status">
+                    status = @Status
+                </IsProperty>
+    </Set>
+    Where row_key=@RowKey
+</Statement>
+
+    <!--获取数据列-->
+    <Statement Id="Query" ResultMap="NewsInfoResultMap">
+        SELECT
+        <IsNotEmpty Prepend="Top" Property="Taken">
+            (@Taken)
+        </IsNotEmpty>
+        T.* From tbl_news_info T
+        <Include RefId="QueryParams"/>
+        <Switch Prepend="Order By" Property="OrderBy">
+            <Default>
+                T.row_key Desc
+            </Default>
+        </Switch>
+    </Statement>
+
+
+    <!--获取分页数据-->
+    <Statement Id="QueryByPage" ResultMap="NewsInfoResultMap">
+
+                Select TT.* From
+                (Select ROW_NUMBER() Over(Order By T.row_key Desc) Row_Index,T.* From tbl_news_info T With(NoLock)
+                <Include RefId="QueryParams"/>) TT
+                Where TT.Row_Index Between ((@PageIndex-1)*@PageSize+1) And (@PageIndex*@PageSize);
+                </Statement>
+
+
+<!--获取记录数-->
+<Statement Id="GetRecord">
+    Select Count(1) From tbl_news_info T
+    <Include RefId="QueryParams" />
+</Statement>
+
+    <!--获取表映射实体-->
+    <Statement Id="GetEntity" ResultMap="NewsInfoResultMap">
+        Select Top 1 T.* From tbl_news_info T With(NoLock)
+        <Where Min="1">
+                <IsNotEmpty Prepend="And" Property="RowKey">
+                    T.row_key= @RowKey
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Title">
+                    T.title= @Title
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="PublishTime">
+                    T.publish_time= @PublishTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="NewsKind">
+                    T.news_kind= @NewsKind
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="NewsType">
+                    T.news_type= @NewsType
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Path">
+                    T.path= @Path
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="AttachData">
+                    T.attach_data= @AttachData
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Flag">
+                    T.flag= @Flag
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Content">
+                    T.content= @Content
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="ViewCount">
+                    T.view_count= @ViewCount
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Note">
+                    T.note= @Note
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Creator">
+                    T.creator= @Creator
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="CreateTime">
+                    T.create_time= @CreateTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Editor">
+                    T.editor= @Editor
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="UpdateTime">
+                    T.update_time= @UpdateTime
+                </IsNotEmpty>
+                <IsNotEmpty Prepend="And" Property="Status">
+                    T.status= @Status
+                </IsNotEmpty>
+        </Where>
+    </Statement>
+
+
+<!--是否存在该记录-->
+<Statement Id="IsExist">
+    Select Count(1) From tbl_news_info T
+    <Include RefId="QueryParams" />
+</Statement>
+
+
+    </Statements>
+</SmartSqlMap>

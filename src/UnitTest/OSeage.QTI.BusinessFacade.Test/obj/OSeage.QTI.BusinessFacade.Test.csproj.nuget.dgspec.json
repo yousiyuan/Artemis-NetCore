@@ -1,0 +1,371 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\projects\\WEB_API_LIUNIANSON\\src\\UnitTest\\OSeage.QTI.BusinessFacade.Test\\OSeage.QTI.BusinessFacade.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\projects\\WEB_API_LIUNIANSON\\src\\BusinessFacade\\OSeage.QTI.BusinessFacade\\OSeage.QTI.BusinessFacade.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\WEB_API_LIUNIANSON\\src\\BusinessFacade\\OSeage.QTI.BusinessFacade\\OSeage.QTI.BusinessFacade.csproj",
+        "projectName": "OSeage.QTI.BusinessFacade",
+        "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\BusinessFacade\\OSeage.QTI.BusinessFacade\\OSeage.QTI.BusinessFacade.csproj",
+        "packagesPath": "C:\\Users\\artemis\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\BusinessFacade\\OSeage.QTI.BusinessFacade\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artemis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\projects\\WEB_API_LIUNIANSON\\src\\Oseage.Common.Tools\\Oseage.Common.Tools.csproj": {
+                "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Oseage.Common.Tools\\Oseage.Common.Tools.csproj"
+              },
+              "C:\\projects\\WEB_API_LIUNIANSON\\src\\Service\\OSeage.QTI.Service\\OSeage.QTI.Service.csproj": {
+                "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Service\\OSeage.QTI.Service\\OSeage.QTI.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "SmartSql.ScriptTag": {
+              "target": "Package",
+              "version": "[4.0.71, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.6.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.QTI.Entity\\OSeage.QTI.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.QTI.Entity\\OSeage.QTI.Entity.csproj",
+        "projectName": "OSeage.QTI.Entity",
+        "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.QTI.Entity\\OSeage.QTI.Entity.csproj",
+        "packagesPath": "C:\\Users\\artemis\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.QTI.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artemis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\projects\\WEB_API_LIUNIANSON\\src\\Oseage.Common.Tools\\Oseage.Common.Tools.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Oseage.Common.Tools\\Oseage.Common.Tools.csproj",
+        "projectName": "Oseage.Common.Tools",
+        "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Oseage.Common.Tools\\Oseage.Common.Tools.csproj",
+        "packagesPath": "C:\\Users\\artemis\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Oseage.Common.Tools\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artemis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AspectInjector": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "SmartSql.DIExtension": {
+              "target": "Package",
+              "version": "[4.0.71, )"
+            },
+            "SmartSql.InvokeSync": {
+              "target": "Package",
+              "version": "[4.0.71, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\projects\\WEB_API_LIUNIANSON\\src\\Repository\\OSeage.QTI.Repository\\OSeage.QTI.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Repository\\OSeage.QTI.Repository\\OSeage.QTI.Repository.csproj",
+        "projectName": "OSeage.QTI.Repository",
+        "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Repository\\OSeage.QTI.Repository\\OSeage.QTI.Repository.csproj",
+        "packagesPath": "C:\\Users\\artemis\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Repository\\OSeage.QTI.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artemis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.QTI.Entity\\OSeage.QTI.Entity.csproj": {
+                "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Entity\\OSeage.QTI.Entity\\OSeage.QTI.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "SmartSql.DyRepository": {
+              "target": "Package",
+              "version": "[4.0.71, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\projects\\WEB_API_LIUNIANSON\\src\\Service\\OSeage.QTI.Service\\OSeage.QTI.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Service\\OSeage.QTI.Service\\OSeage.QTI.Service.csproj",
+        "projectName": "OSeage.QTI.Service",
+        "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Service\\OSeage.QTI.Service\\OSeage.QTI.Service.csproj",
+        "packagesPath": "C:\\Users\\artemis\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Service\\OSeage.QTI.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artemis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\projects\\WEB_API_LIUNIANSON\\src\\Repository\\OSeage.QTI.Repository\\OSeage.QTI.Repository.csproj": {
+                "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\Repository\\OSeage.QTI.Repository\\OSeage.QTI.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\projects\\WEB_API_LIUNIANSON\\src\\UnitTest\\OSeage.QTI.BusinessFacade.Test\\OSeage.QTI.BusinessFacade.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\WEB_API_LIUNIANSON\\src\\UnitTest\\OSeage.QTI.BusinessFacade.Test\\OSeage.QTI.BusinessFacade.Test.csproj",
+        "projectName": "OSeage.QTI.BusinessFacade.Test",
+        "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\UnitTest\\OSeage.QTI.BusinessFacade.Test\\OSeage.QTI.BusinessFacade.Test.csproj",
+        "packagesPath": "C:\\Users\\artemis\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\UnitTest\\OSeage.QTI.BusinessFacade.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artemis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\projects\\WEB_API_LIUNIANSON\\src\\BusinessFacade\\OSeage.QTI.BusinessFacade\\OSeage.QTI.BusinessFacade.csproj": {
+                "projectPath": "C:\\projects\\WEB_API_LIUNIANSON\\src\\BusinessFacade\\OSeage.QTI.BusinessFacade\\OSeage.QTI.BusinessFacade.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

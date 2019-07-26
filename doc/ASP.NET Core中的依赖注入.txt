@@ -1,0 +1,2 @@
+ASP.NET Core中的依赖注入（1）：控制反转（IoC）
+https://www.cnblogs.com/artech/p/asp-net-core-di-ioc.html

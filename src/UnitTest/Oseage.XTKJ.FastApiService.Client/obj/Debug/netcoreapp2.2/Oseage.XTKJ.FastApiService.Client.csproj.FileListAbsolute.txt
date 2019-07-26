@@ -1,0 +1,11 @@
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\bin\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.deps.json
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\bin\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.runtimeconfig.json
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\bin\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.runtimeconfig.dev.json
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\bin\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.dll
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\bin\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.pdb
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\obj\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.csproj.CoreCompileInputs.cache
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\obj\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.AssemblyInfoInputs.cache
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\obj\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.AssemblyInfo.cs
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\obj\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.dll
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\obj\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.pdb
+C:\projects\WEB_API_LIUNIANSON\src\API\Oseage.XTKJ.FastApiService.Client\obj\Debug\netcoreapp2.2\Oseage.XTKJ.FastApiService.Client.csprojAssemblyReference.cache

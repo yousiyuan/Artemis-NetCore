@@ -1,0 +1,14 @@
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\bin\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Service.deps.json
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\bin\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Service.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\bin\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Service.pdb
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\bin\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Entity.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\bin\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Repository.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\bin\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Repository.pdb
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\bin\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Entity.pdb
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\obj\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Service.csprojAssemblyReference.cache
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\obj\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Service.csproj.CoreCompileInputs.cache
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\obj\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Service.AssemblyInfoInputs.cache
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\obj\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Service.AssemblyInfo.cs
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\obj\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Service.csproj.CopyComplete
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\obj\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Service.dll
+E:\深圳市学堂科技有限公司\WEB_API_LIUNIANSON\src\Service\OSeage.LMS.ERSCP.Service\obj\Debug\netcoreapp2.2\OSeage.LMS.ERSCP.Service.pdb

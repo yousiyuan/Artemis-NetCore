@@ -1,0 +1,99 @@
+﻿[2019/7/7 3:35:05] [Info] register AccountController.Login to [POST:/api/account/login]
+[2019/7/7 3:35:05] [Info] rewrite url [/api/public/sayhello/{name}-{value}] to [/api/public/sayhello]
+[2019/7/7 3:35:05] [Info] register PublicController.SayHello to [GET:/api/public/sayhello]
+[2019/7/7 3:35:05] [Info] register PublicController.Post to [POST:/api/public/post]
+[2019/7/7 3:35:05] [Info] register PublicController.PostForm to [POST:/api/public/postform]
+[2019/7/7 3:35:05] [Info] register PublicController.UploadFile to [POST:/api/public/uploadfile]
+[2019/7/7 3:35:05] [Info] register PublicController.PostStream to [POST:/api/public/poststream]
+[2019/7/7 3:35:05] [Info] register DemoController.GetQuestionList to [POST:/com/demo/getquestionlist]
+[2019/7/7 3:35:05] [Warring] /api/account/login already exists!replaced with AccountController.Login!
+[2019/7/7 3:35:05] [Info] register AccountController.Login to [POST:/api/account/login]
+[2019/7/7 3:35:05] [Info] rewrite url [/api/public/sayhello/{name}-{value}] to [/api/public/sayhello]
+[2019/7/7 3:35:05] [Warring] /api/public/sayhello already exists!replaced with PublicController.SayHello!
+[2019/7/7 3:35:05] [Info] register PublicController.SayHello to [GET:/api/public/sayhello]
+[2019/7/7 3:35:05] [Warring] /api/public/post already exists!replaced with PublicController.Post!
+[2019/7/7 3:35:05] [Info] register PublicController.Post to [POST:/api/public/post]
+[2019/7/7 3:35:05] [Warring] /api/public/postform already exists!replaced with PublicController.PostForm!
+[2019/7/7 3:35:05] [Info] register PublicController.PostForm to [POST:/api/public/postform]
+[2019/7/7 3:35:05] [Warring] /api/public/uploadfile already exists!replaced with PublicController.UploadFile!
+[2019/7/7 3:35:05] [Info] register PublicController.UploadFile to [POST:/api/public/uploadfile]
+[2019/7/7 3:35:05] [Warring] /api/public/poststream already exists!replaced with PublicController.PostStream!
+[2019/7/7 3:35:05] [Info] register PublicController.PostStream to [POST:/api/public/poststream]
+[2019/7/7 3:35:05] [Warring] /com/demo/getquestionlist already exists!replaced with DemoController.GetQuestionList!
+[2019/7/7 3:35:05] [Info] register DemoController.GetQuestionList to [POST:/com/demo/getquestionlist]
+[2019/7/7 3:35:05] [Warring] /api/account/login already exists!replaced with AccountController.Login!
+[2019/7/7 3:35:05] [Info] register AccountController.Login to [POST:/api/account/login]
+[2019/7/7 3:35:05] [Info] rewrite url [/api/public/sayhello/{name}-{value}] to [/api/public/sayhello]
+[2019/7/7 3:35:06] [Warring] /api/public/sayhello already exists!replaced with PublicController.SayHello!
+[2019/7/7 3:35:06] [Info] register PublicController.SayHello to [GET:/api/public/sayhello]
+[2019/7/7 3:35:06] [Warring] /api/public/post already exists!replaced with PublicController.Post!
+[2019/7/7 3:35:06] [Info] register PublicController.Post to [POST:/api/public/post]
+[2019/7/7 3:35:06] [Warring] /api/public/postform already exists!replaced with PublicController.PostForm!
+[2019/7/7 3:35:06] [Info] register PublicController.PostForm to [POST:/api/public/postform]
+[2019/7/7 3:35:06] [Warring] /api/public/uploadfile already exists!replaced with PublicController.UploadFile!
+[2019/7/7 3:35:06] [Info] register PublicController.UploadFile to [POST:/api/public/uploadfile]
+[2019/7/7 3:35:06] [Warring] /api/public/poststream already exists!replaced with PublicController.PostStream!
+[2019/7/7 3:35:06] [Info] register PublicController.PostStream to [POST:/api/public/poststream]
+[2019/7/7 3:35:06] [Warring] /com/demo/getquestionlist already exists!replaced with DemoController.GetQuestionList!
+[2019/7/7 3:35:06] [Info] register DemoController.GetQuestionList to [POST:/com/demo/getquestionlist]
+[2019/7/7 3:35:06] [Info] init BeetleX.FastHttpApi.ServerController controller path C:\Users\artemis\.nuget\packages\beetlex.fasthttpapi\1.5.4.2\lib\netcoreapp2.1\
+[2019/7/7 3:35:06] [Info] register ServerController.__ServerStatus to [GET:/__serverstatus]
+[2019/7/7 3:35:06] [Info] register ServerController.__SetSettings to [POST:/__setsettings]
+[2019/7/7 3:35:06] [Info] register ServerController.__ChangeAccessKey to [GET:/__changeaccesskey]
+[2019/7/7 3:35:06] [Info] register ServerController.__GetSettings to [GET:/__getsettings]
+[2019/7/7 3:35:06] [Info] register ServerController.__LogConnect to [GET:/__logconnect]
+[2019/7/7 3:35:06] [Info] register ServerController.__ListLog to [GET:/__listlog]
+[2019/7/7 3:35:06] [Info] register ServerController.__GetOptions to [GET:/__getoptions]
+[2019/7/7 3:35:06] [Info] register ServerController.__UploadModule to [POST:/__uploadmodule]
+[2019/7/7 3:35:06] [Info] register ServerController.__SetActionMaxrps to [POST:/__setactionmaxrps]
+[2019/7/7 3:35:06] [Info] register ServerController.__SetOptions to [POST:/__setoptions]
+[2019/7/7 3:35:07] [Info] detection sessions timeout with 3600s
+[2019/7/7 3:35:07] [Info] listen 127.0.0.1@9090 success ssl:False
+[2019/7/7 3:35:07] [Info] BeetleX [V:1.3.2.0]
+[2019/7/7 3:35:07] [Info] Environment [ServerGC:True][IOQueue:False|n:2][Threads:4][Private Buffer:False|2048KB]
+[2019/7/7 3:35:07] [Info] BeetleX FastHttpApi [IOQueue:False|Threads:2] [V:1.5.4.2]
+[2019/7/7 3:35:07] [Debug] invoke options reload event!
+[2019/7/7 3:35:07] [Debug] invoke server started event!
+[2019/7/7 3:35:18] [Debug] 127.0.0.1:7550 update active time
+[2019/7/7 3:35:18] [Info] session connected from 127.0.0.1:7550@1
+[2019/7/7 3:35:18] [Debug] 127.0.0.1:7550 begin receive
+[2019/7/7 3:35:18] [Trace] 127.0.0.1:7550 receive hex:504f5354202f636f6d2f64656d6f2f4765745175657374696f6e4c69737420485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f782d7777772d666f726d2d75726c656e636f6465640d0a486f73743a206c6f63616c686f73740d0a746f6b656e3a207465737420746f6b656e20696e666f0d0a436f6e74656e742d4c656e6774683a20300d0a0d0a
+[2019/7/7 3:35:18] [Debug] 127.0.0.1:7550 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/7 3:35:18] [Debug] 127.0.0.1:7550 update active time
+[2019/7/7 3:35:18] [Info] 127.0.0.1:7550 POST /com/demo/GetQuestionList request
+[2019/7/7 3:35:18] [Debug] 127.0.0.1:7550 POST /com/demo/GetQuestionList request detail POST /com/demo/GetQuestionList
+Content-Type=application/x-www-form-urlencoded
+Host=localhost
+token=test token info
+Content-Length=0
+X-Real-IP=127.0.0.1:7550
+
+[2019/7/7 3:35:18] [Info] 127.0.0.1:7550 http POST /com/demo/getquestionlist use time:42ms
+[2019/7/7 3:35:18] [Debug] 127.0.0.1:7550 POST /com/demo/GetQuestionList response 200 OK
+
+[2019/7/7 3:35:18] [Info] 127.0.0.1:7550 POST /com/demo/GetQuestionList response 200 OK
+[2019/7/7 3:35:18] [Trace] 127.0.0.1:7550 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a446174653a205361742c203036204a756c20323031392031393a33353a313820474d540d0a436f6e74656e742d4c656e6774683a20333520202020202020200d0a0d0a5b22e6b581e5b9b4c2b7e585ace5ad90222c22e6b581e5b9b4c2b7e88e89e5a89c225d
+[2019/7/7 3:35:18] [Debug]  127.0.0.1:7550 connected
+[2019/7/7 3:35:19] [Trace] 127.0.0.1:7550 receive hex:504f5354202f6170692f6163636f756e742f4c6f67696e20485454502f312e310d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a486f73743a206c6f63616c686f73740d0a436f6e74656e742d4c656e6774683a20353920202020202020200d0a0d0a7b22757365724e616d65223a227a7862222c2270617373776f7264223a22313233343536222c22766572696679436f6465223a227364683335227d
+[2019/7/7 3:35:19] [Debug] 127.0.0.1:7550 session packet decode completed BeetleX.FastHttpApi.HttpRequest
+[2019/7/7 3:35:19] [Debug] 127.0.0.1:7550 update active time
+[2019/7/7 3:35:19] [Info] 127.0.0.1:7550 POST /api/account/Login request
+[2019/7/7 3:35:19] [Debug] 127.0.0.1:7550 POST /api/account/Login request detail POST /api/account/Login
+Content-Type=application/json
+Host=localhost
+Content-Length=59        
+X-Real-IP=127.0.0.1:7550
+
+[2019/7/7 3:35:19] [Debug] 127.0.0.1:7550 POST /api/account/Login set options
+[2019/7/7 3:35:20] [Info] Microsoft.CSharp, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a load assembly Microsoft.CSharp.resources, Version=4.0.4.0, Culture=zh-CN, PublicKeyToken=b03f5f7f11d50a3a
+[2019/7/7 3:35:20] [Error] Microsoft.CSharp, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a load assembly Microsoft.CSharp.resources, Version=4.0.4.0, Culture=zh-CN, PublicKeyToken=b03f5f7f11d50a3a error Could not load file or assembly 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.5\Microsoft.CSharp.resources.dll'. 系统找不到指定的文件。
+[2019/7/7 3:35:20] [Info] Microsoft.CSharp, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a load assembly Microsoft.CSharp.resources, Version=4.0.4.0, Culture=zh-Hans, PublicKeyToken=b03f5f7f11d50a3a
+[2019/7/7 3:35:20] [Error] Microsoft.CSharp, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a load assembly Microsoft.CSharp.resources, Version=4.0.4.0, Culture=zh-Hans, PublicKeyToken=b03f5f7f11d50a3a error Could not load file or assembly 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.5\Microsoft.CSharp.resources.dll'. 系统找不到指定的文件。
+[2019/7/7 3:35:20] [Info] Microsoft.CSharp, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a load assembly Microsoft.CSharp.resources, Version=4.0.4.0, Culture=zh, PublicKeyToken=b03f5f7f11d50a3a
+[2019/7/7 3:35:20] [Error] Microsoft.CSharp, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a load assembly Microsoft.CSharp.resources, Version=4.0.4.0, Culture=zh, PublicKeyToken=b03f5f7f11d50a3a error Could not load file or assembly 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.5\Microsoft.CSharp.resources.dll'. 系统找不到指定的文件。
+[2019/7/7 3:35:20] [Info] 127.0.0.1:7550 http POST /api/account/login use time:250ms
+[2019/7/7 3:35:20] [Debug] 127.0.0.1:7550 POST /api/account/Login response 200 OK
+Access-Control-Allow-Origin=*
+
+[2019/7/7 3:35:20] [Info] 127.0.0.1:7550 POST /api/account/Login response 200 OK
+[2019/7/7 3:35:20] [Trace] 127.0.0.1:7550 send hex:485454502f312e3120323030204f4b0d0a5365727665723a20426565746c65580d0a4163636573732d436f6e74726f6c2d416c6c6f772d4f726967696e3a202a0d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a446174653a205361742c203036204a756c20323031392031393a33353a313920474d540d0a436f6e74656e742d4c656e6774683a20333320202020202020200d0a0d0a7b226d7367223a22e799bbe5bd95e68890e58a9f222c22636f6465223a3132337d
